@@ -4,7 +4,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
 
 
 async function foo() {
-  var url= 'http://localhost/sistempakar_domba/admin/home/api';
+  var url= 'http://localhost/sispak_komputer/admin/home/api';
   var result= await (await fetch(url)).json(); // or .json()
   return result;
 }

@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Pertanyaan
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Kerusakan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-list"></i> Pertanyaan</a></li>
@@ -51,23 +51,23 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/expert_system.jpg" alt="Expert System" style="width:100%;">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/Komputer.jpg" alt="komputer" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Komputer</h3>
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sispak.jpg" alt="Sistem Pakar" style="width:100%;">
               <div class="carousel-caption">
                 <h3>Sistem Pakar</h3>
               </div>
             </div>
 
             <div class="item">
-              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sheep.jpg" alt="Sheep" style="width:100%;">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/servis.jpg" alt="Servis Komputer" style="width:100%;">
               <div class="carousel-caption">
-                <h3>Domba</h3>
-              </div>
-            </div>
-
-            <div class="item">
-              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sheep_doctor.jpg" alt="Sheep Expert" style="width:100%;">
-              <div class="carousel-caption">
-                <h3>Doktor Hewan</h3>
+                <h3>Servis Komputer</h3>
               </div>
             </div>
           </div>
@@ -93,9 +93,9 @@
         <img src="<?php echo base_url(); ?>assets/img/logo_50x50.jpg" alt="doctor" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
-        <h3 class="media-heading">Sheep Expert System</h3>
-        <p>Sistem Pakar Diagnosa Penyakit Domba menggunakan Metode Forward Chaining berbasis WEB merupakan suatu sistem yang mendiagnosa penyakit melalui indikasi penyakit lalu muncul gejala yang dialami oleh Domba.
-          Dengan menggunakan sistem ini, peternak domba lebih gampang mengetahui penyakit yang dialami oleh hewan peliharannya tanpa harus menemui seorang Dokter dan Rumah Sakit</p>
+        <h3 class="media-heading">Sistem Pakar Komputer</h3>
+        <p>Sistem Pakar Diagnosa Kerusakan hardware komputer menggunakan Metode Forward Chaining berbasis WEB merupakan suatu sistem yang dapat mendiagnosa kerusakan hardware komuter berdasarkan gejala-gejala yang dialami komputer.
+          Sistem ini bertujuan untuk membantu para pengguna komputer yang sering mnegalami kerusakan pada hardware komputer. Sistem ini dapat memudahkan pengguna komputer untuk menemukan kerusakan yang dialami komputer sehingga tidak perlu menemui orang servis komputer terlebih dahulu</p>
       </div>
     <br>
     </div>
@@ -106,10 +106,9 @@
         <img src="<?php echo base_url(); ?>assets/img/doctor.png" alt="doctor" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
-        <h3 class="media-heading">Diagnosa Domba</h3>
-        <p>Daftar pertanyaan ini disusun oleh seorang ahli berpengalaman dibidang penyakit domba yaitu drh. Pandu Tokoh Amukti.
-          Seorang dokter hewan yang beralamat di Perumahan Tamansari Indah Jl. Cendana 7 RT 15/06, Tamansari, Bondowoso.
-          Saat ini bekerja sebagai dokter hewan di Puskeswan Tamanan, Bondowoso.</p>
+        <h3 class="media-heading">Diagnosa Kerusakan Hardware Komputer</h3>
+        <p>Daftar pertanyaan ini disusun oleh seorang ahli yang berpengalaman dibidang teknik komputer yaitu bapak Bryan David S.Kom.
+          Bapak Bryan David ini sudah memiliki pengalaman dalam bidang servis komputer selama 4 tahun dan sekarang beliau bekerja sebegaia servis komputer di mall TangCity.</p>
       </div>
     <hr>
     </div>
@@ -132,7 +131,7 @@
             </div><!-- /.info-box -->
 
             <script>
-            var base_url = 'http://localhost/sistempakar_domba/'
+            var base_url = 'http://localhost/sispak_komputer/'
             var api_rule = base_url+'api_rule'
 
             let rule_list = []
@@ -319,7 +318,7 @@
             <script>
             /*
               const container = document.getElementById("container");
-              fetch('http://localhost/sistempakar_domba/api_pertanyaan')
+              fetch('http://localhost/sispak_komputer/api_pertanyaan')
                   .then(response => {
                       if (response.ok) {
                           return response.json();

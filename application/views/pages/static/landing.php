@@ -42,11 +42,8 @@ Author URL: http://w3layouts.com
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="<?php echo base_url(); ?>home">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>konsultasi">Konsultasi</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>home">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url(); ?>tips">Tips Perawatan</a>
@@ -227,7 +224,6 @@ Author URL: http://w3layouts.com
                         <ul>
                             <h6 class="footer-title-29">Usefull Links</h6>
                             <li><a href="<?php echo base_url(); ?>home">Home</a></li>
-                            <li><a href="<?php echo base_url(); ?>konsultasi">Konsultasi</a></li>
                             <li><a href="<?php echo base_url(); ?>tips">Tips Perawatan</a></li>
                             <li><a href="<?php echo base_url(); ?>tentang">Tentang</a></li>
                         </ul>

@@ -71,13 +71,8 @@
         <li class="header">Navigasi Utama</li>
         <li >
           <a href="<?php echo base_url(); ?>home">
-            <i class="fa fa-home"></i> <span>Home</span>
-          </a>
-        </li>
-        <li >
-          <a href="<?php echo base_url(); ?>konsultasi">
             <i class="fa fa-medkit"></i>
-            <span>Konsultasi</span>
+            <span>Home</span>
           </a>
         </li>
         <li >
@@ -87,21 +82,9 @@
           </a>
         </li>
         <li >
-          <a href="<?php echo base_url(); ?>petunjuk">
-            <i class="fa fa-search"></i>
-            <span>Petunjuk</span>
-          </a>
-        </li>
-        <li >
           <a href="<?php echo base_url(); ?>tentang">
             <i class="fa fa-question-circle"></i>
             <span>Tentang</span>
-          </a>
-        </li>
-        <li >
-          <a href="<?php echo base_url(); ?>admin/login">
-            <i class="fa fa-sign-in"></i>
-            <span>Admin</span>
           </a>
         </li>
 

@@ -82,22 +82,6 @@
               <br>
               <div class="box box-info collapsed-box">
                 <div class="box-header with-border" data-widget="collapse">
-                  <h3 class="box-title">Penjelasan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
-                </div>
-                <div class="box-body">
-                  <?php echo $golpenjelasanpenyakit; ?>
-                </div>
-              </div>
-              <div class="box box-info collapsed-box">
-                <div class="box-header with-border" data-widget="collapse">
-                  <h3 class="box-title">Gejala</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
-                </div>
-                <div class="box-body">
-                  <?php echo $golgejalapenyakit; ?>
-                </div>
-              </div>
-              <div class="box box-info collapsed-box">
-                <div class="box-header with-border" data-widget="collapse">
                   <h3 class="box-title">Penanganan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
                 </div>
                 <div class="box-body">
@@ -129,8 +113,6 @@
                     if ($p->kode_penyakit == $most_similar_penyakit) {
                       $golpenyakit = $p->nama_penyakit;
                       $golidpenyakit = $p->id_penyakit;
-                      $golpenjelasanpenyakit = $p->penjelasan;
-                      $golgejalapenyakit = $p->gejala;
                       $golpenangananpenyakit = $p->penanganan;
                     }
                   }
@@ -150,22 +132,6 @@
                   <br>
 
                   <br>
-                  <div class="box box-info collapsed-box">
-                    <div class="box-header with-border" data-widget="collapse">
-                      <h3 class="box-title">Penjelasan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                    <div class="box-body">
-                      <?php echo $golpenjelasanpenyakit; ?>
-                    </div>
-                  </div>
-                  <div class="box box-info collapsed-box">
-                    <div class="box-header with-border" data-widget="collapse">
-                      <h3 class="box-title">Gejala</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                    <div class="box-body">
-                      <?php echo $golgejalapenyakit; ?>
-                    </div>
-                  </div>
                   <div class="box box-info collapsed-box">
                     <div class="box-header with-border" data-widget="collapse">
                       <h3 class="box-title">Penanganan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>

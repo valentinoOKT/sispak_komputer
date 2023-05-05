@@ -79,22 +79,6 @@
             <br>
             <div class="box box-info collapsed-box">
               <div class="box-header with-border" data-widget="collapse">
-                <h3 class="box-title">Penjelasan</h3>
-              </div>
-              <div class="box-body">
-                <?php echo $key->penjelasan; ?>
-              </div>
-            </div>
-            <div class="box box-info collapsed-box">
-              <div class="box-header with-border" data-widget="collapse">
-                <h3 class="box-title">Gejala</h3>
-              </div>
-              <div class="box-body">
-                <?php echo $key->gejala; ?>
-              </div>
-            </div>
-            <div class="box box-info collapsed-box">
-              <div class="box-header with-border" data-widget="collapse">
                 <h3 class="box-title">Penanganan</h3>
               </div>
               <div class="box-body">
