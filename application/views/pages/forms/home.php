@@ -6,7 +6,7 @@
   <section class="content-header">
     <h1>
       Home
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Kerusakan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -35,11 +35,11 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6 pt-md-0 pt-4">
                             <h3 class="mb-sm-4 mb-3 titlef" style="color: #000;">Kami adalah <span class="d-block-res">S<span class="type-js"><span
-                                            class="text-js">.E.S.</span></span></span></h3>
-                            <p>Sebuah website sistem pakar yang membantu anda mendiagnosa penyakit domba.</p>
+                                            class="text-js">.P.K</span></span></span></h3>
+                            <p>Sebuah website sistem pakar yang membantu anda mendiagnosa kerusakan pada hardware komputer anda.</p>
                         </div>
                         <div class="col-md-6 banner-right mt-lg-4 mt-0 text-right offset-lg-1">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system_500x500.jpg" alt=" ">
+                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system1_500x500.jpg" alt=" ">
                         </div>
                     </div>
                 </div>
@@ -58,18 +58,7 @@
                             </div>
                             <div class="about-content">
                                 <h5 class="mb-3">Who we are</h5>
-                                <p>Pengembang website sistem pakar diagnosa penyakit domba dengan metode forward chaining dan berbasis framework CI3.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="about-single p-3 d-flex justify-content-between">
-                            <div class="about-icon mr-3">
-                                <i class="fas fa-drafting-compass" aria-hidden="true"></i>
-                            </div>
-                            <div class="about-content">
-                                <h5 class="mb-3">How we Work</h5>
-                                <p>Kami bekerja sama dengan pakar, yaitu seorang dokter hewan yang ahli mengenai penyakit domba sebagai sumber data kami.</p>
+                                <p>Pengembang website sistem pakar diagnosa kerusakan hardware komputer dengan metode forward chaining.</p>
                             </div>
                         </div>
                     </div>
@@ -80,7 +69,7 @@
                             </div>
                             <div class="about-content">
                                 <h5 class="mb-3">What we do</h5>
-                                <p>Memberikan layanan diagnosa penyakit domba untuk memudahkan pengguna dalam merawat domba yang terserang penyakit.</p>
+                                <p>Memberikan layanan diagnosa kerusakan hardware komputer untuk memudahkan pengguna dalam mendiagnosa kerusakan yang dialami oleh komputer.</p>
                             </div>
                         </div>
                     </div>
@@ -89,24 +78,6 @@
         </section>
         <!-- //banner bottom section -->
 
-        <!-- about section -->
-        <section class="w3l-aboutblock pt-4 pb-5">
-            <div class="container pb-md-5 pb-sm-4">
-                <div class="row">
-                    <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                        <img class="img-fluid img-responsive" src="<?php echo base_url(); ?>assets/img/doktorpandu-copy.jpeg" alt="doktorpandu">
-                    </div>
-                    <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first">
-                        <h3 class="text-bgs mb-md-3 mb-2">Pakar <span>Terpercaya</span></h3>
-                        <h3 class="titlef-style"><span>drh.</span> Pandu Tokoh Amukti</h3>
-                        <p class="ab-text mt-4 pt-lg-2">"Memelihara domba adalah hal yang gampang-gampang-susah sekaligus susah-susah-gampang, dengan adanya aplikasi ini semakin memudahkan para pelaku usaha peternakan domba lebih open minded terhadap kesehatan ternak. Semoga bermanfaat."</p>
-                        <p class="mt-4">Seorang dokter hewan yang beralamat di Perumahan Tamansari Indah Jl. Cendana 7 RT 15/06, Tamansari, Bondowoso. Saat ini bekerja sebagai dokter hewan di Puskeswan Tamanan, Bondowoso.</p>
-                        <img class="img-fluid mt-md-5 mt-4 img-dark-color" src="<?php echo base_url(); ?>assets/img/sign.png" alt=" ">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //about section -->
 
         <!-- services section -->
         <section class="w3l-bottom-grids-6 service-w3l-bg py-5" id="services">
@@ -118,23 +89,23 @@
                 <div class="row pt-md-4 justify-content-center">
                     <div class="col-lg-4 col-md-6 grids-feature">
                         <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sheep_doctor_160x160.jpg" alt=" ">
+                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/servis_160.jpg" alt=" ">
                             <h4><a href="#feature" class="titlef-head">Diagnosa Mudah</a></h4>
                             <p>Hanya dengan menjawab pertanyaan-pertanyaan yang ada, anda bisa mendapatkan hasil diagnosa yang akurat.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-sm-5 mt-4">
                         <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sheep_160x160.jpg" alt=" ">
+                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/Komputer_160.jpg" alt=" ">
                             <h4><a href="#feature" class="titlef-head">Cetak Hasil</a></h4>
-                            <p>Anda dapat mencetak hasil diagnosa yang muncul untuk memudahkan anda dalam merawat domba nantinya.</p>
+                            <p>Anda dapat mencetak hasil diagnosa yang muncul untuk memudahkan anda dalam menangani kerusakan yang sama nantinya.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-sm-5 mt-4">
                         <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system_160x160.jpg" alt=" ">
+                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sispak_160.jpg" alt=" ">
                             <h4><a href="#feature" class="titlef-head">Tips Perawatan</a></h4>
-                            <p>Terdapat berbagai tips perawatan domba yang bisa anda lihat pada website ini.</p>
+                            <p>Terdapat berbagai tips penanganan kerusakan hardware komputer yang bisa anda lihat pada website ini.</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +122,7 @@
                             <div class="footer-logo mb-3">
                                 <a class="footer-brand-logo" href="<?php echo base_url(); ?>landing"><img src="<?php echo base_url(); ?>assets/img/ses_160x47.png" alt="logo"></a>
                             </div>
-                            <p>Website sistem pakar untuk membantu mendiagnosis penyakit domba.</p>
+                            <p>Website sistem pakar untuk membantu mendiagnosis kerusakan hardware komputer.</p>
                             <!--div class="main-social-footer-29 mt-4">
                                 <a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
                                 <a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a>
@@ -161,7 +132,6 @@
                             <ul>
                                 <h6 class="footer-titlef-29">Usefull Links</h6>
                                 <li><a href="<?php echo base_url(); ?>home">Home</a></li>
-                                <li><a href="<?php echo base_url(); ?>konsultasi">Konsultasi</a></li>
                                 <li><a href="<?php echo base_url(); ?>tips">Tips Perawatan</a></li>
                                 <li><a href="<?php echo base_url(); ?>tentang">Tentang</a></li>
                             </ul>

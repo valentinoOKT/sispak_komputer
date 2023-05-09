@@ -25,7 +25,7 @@ class Konsultasi_control extends CI_Controller
     $data['penyakit']=$this->Konsultasi_model->daftar_penyakit();
 
     $this->load->view('pages/static/header');
-    $this->load->view('pages/forms/daftar_konsultasi',$data);
+    $this->load->view('pages/forms/home',$data);
     $this->load->view('pages/static/footer');
 
   }
@@ -185,9 +185,9 @@ class Konsultasi_control extends CI_Controller
     echo "<br><br>";
 
     if ($exjawabans == $nextrule) {
-      echo "sakit";
+      echo "rusak";
     }else {
-      echo "tidak sakit";
+      echo "tidak rusak";
     }
   }
 

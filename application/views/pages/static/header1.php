@@ -47,7 +47,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><img class="img-rounded" src="<?php echo base_url(); ?>assets/img/logo_50.png" alt="icon"></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="<?php echo base_url(); ?>assets/img/ses_160x47.png" alt="logo"></span>
+      <span class="logo-lg"><img src="<?php echo base_url(); ?>assets/img/SPK_160.png" alt="logo"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
