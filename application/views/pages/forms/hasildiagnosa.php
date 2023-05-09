@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Hasil
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-list"></i> Hasil</a></li>
@@ -55,7 +55,7 @@
                   <span class="info-box-icon bg-yellow"><i class="fa fa-question-circle"></i></span>
                   <div class="info-box-content">
                     <h4>Hasil diagnosa :</h4>
-                    Hasil diagnosa domba <mark style="background: #e9dbc9;">tidak diketahui</mark>
+                    Hasil diagnosa kerusakan Komputer <mark style="background: #e9dbc9;">tidak diketahui</mark>
                   </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
               <br>
@@ -70,7 +70,7 @@
                   <span class="info-box-icon bg-yellow"><i class="fa fa-warning"></i></span>
                   <div class="info-box-content">
                     <h4>Hasil diagnosa :</h4>
-                    Domba kemungkinan <mark style="background: #e9dbc9;">terkena</mark> penyakit <b><?php echo $golpenyakit; ?></b>
+                    Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golpenyakit; ?></b>
                   </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
 
@@ -122,7 +122,7 @@
                       <span class="info-box-icon bg-yellow"><i class="fa fa-warning"></i></span>
                       <div class="info-box-content">
                         <h4>Hasil diagnosa :</h4>
-                        Domba kemungkinan <mark style="background: #e9dbc9;">terkena</mark> penyakit <b><?php echo $golpenyakit; ?></b>
+                        Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golpenyakit; ?></b>
                       </div><!-- /.info-box-content -->
                   </div><!-- /.info-box -->
 

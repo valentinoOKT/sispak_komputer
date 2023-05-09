@@ -2,7 +2,7 @@
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Daftar Penyakit</h1>
+  <h1 class="h3 mb-2 text-gray-800">Daftar Kerusakan</h1>
 
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
@@ -17,8 +17,8 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>Kode Penyakit</th>
-              <th>Nama Penyakit</th>
+              <th>Kode Kerusakan</th>
+              <th>Nama Kerusakan</th>
               <th>Edit</th>
             </tr>
           </thead>

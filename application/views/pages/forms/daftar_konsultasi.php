@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Daftar
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Kerusakan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-list"></i> Daftar</a></li>
@@ -21,7 +21,7 @@
             <!-- Apply any bg-* class to to the icon to color it -->
             <span class="info-box-icon bg-aqua"><i class="fa fa-mouse-pointer"></i></span>
             <div class="info-box-content">
-              <h4>Pilihlah salah satu penyakit berikut ini :</h4>
+              <h4>Pilihlah salah satu kerusakan berikut ini :</h4>
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
         <div>

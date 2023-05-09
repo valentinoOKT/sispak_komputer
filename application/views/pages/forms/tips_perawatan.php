@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Tips
-      <small>Perawatan Domba</small>
+      <small>Perawatan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-commenting"></i> Tips</a></li>
@@ -22,8 +22,8 @@
                 <!-- Apply any bg-* class to to the icon to color it -->
                 <span class="info-box-icon bg-maroon"><i class="fa fa-commenting"></i></span>
                 <div class="info-box-content">
-                  <h4>Tips Perawatan Domba</h4>
-                  Tekan nama penyakit untuk memunculkan tips perawatan domba yang terkena penyakit tersebut
+                  <h4>Tips Perawatan Hardware Komputer</h4>
+                  Tekan nama kerusakan untuk memunculkan tips perawatan hardware komputer yang mengalami kerusakan tersebut
                 </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
 

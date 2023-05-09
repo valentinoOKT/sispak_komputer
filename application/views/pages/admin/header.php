@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>S.E.S. Admin</title>
+  <title>S.P.K Admin</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url(); ?>assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -88,7 +88,7 @@
 
         <div class="topnav" id="myTopnav">
           <a href="<?php echo base_url(); ?>admin/home">Home</a>
-          <a href="<?php echo base_url(); ?>admin/penyakit">Penyakit</a>
+          <a href="<?php echo base_url(); ?>admin/penyakit">Kerusakan</a>
           <a href="<?php echo base_url(); ?>admin/gejala">Gejala</a>
           <a href="<?php echo base_url(); ?>admin/rule">Rule</a>
           <!--a href="<php echo base_url(); ?>admin/user">User</a-->

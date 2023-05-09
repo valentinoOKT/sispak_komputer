@@ -2,9 +2,9 @@
 <!-- Untuk Tampilan Footer-->
 <footer class="main-footer">
   <div class="pull-right hidden-xs">
-    <b>Sistem Pakar - </b>Penyakit Domba
+    <b>Sistem Pakar - </b>Kerusakan Hardware Komputer
   </div>
-  <strong>Copyright &copy; 2021 Wahyu Rama.</strong> All rights
+  <strong>Copyright &copy; 2023 Valentino Oktawan.</strong> All rights
   reserved.
 </footer>
 

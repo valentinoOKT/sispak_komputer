@@ -90,7 +90,7 @@
     <!-- Left-aligned media object -->
     <div class="media">
       <div class="media-left">
-        <img src="<?php echo base_url(); ?>assets/img/logo_50x50.jpg" alt="doctor" class="media-object" style="width:60px">
+        <img src="<?php echo base_url(); ?>assets/img/logo_50.png" alt="doctor" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
         <h3 class="media-heading">Sistem Pakar Komputer</h3>
@@ -125,7 +125,7 @@
                 <div class="info-box-content">
                   <h4>Jawablah pertanyaan berikut ini :</h4>
                   <span class="progress-description">
-                    Untuk mendiagnosis penyakit domba
+                    Untuk mendiagnosis kerusakan hardware komputer
                   </span>
                 </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->

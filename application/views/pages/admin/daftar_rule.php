@@ -19,7 +19,7 @@
               <th>No</th>
               <th>Kode Rule</th>
               <th>Kode Gejala</th>
-              <th>Kode Penyakit</th>
+              <th>Kode Kerusakan</th>
               <th>Edit</th>
             </tr>
           </thead>
