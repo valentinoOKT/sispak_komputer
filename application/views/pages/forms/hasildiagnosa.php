@@ -25,13 +25,11 @@
     $exketentuan = explode(" ",$ketentuan);
     if ($exketentuan==$ar_jawab) {
       $golrule = explode(" ",$ketentuan);
-      foreach ($penyakit as $p) {
-        if ($r->kode_penyakit==$p->kode_penyakit) {
-          $golpenyakit = $p->nama_penyakit;
-          $golidpenyakit = $p->id_penyakit;
-          $golpenjelasanpenyakit = $p->penjelasan;
-          $golgejalapenyakit = $p->gejala;
-          $golpenangananpenyakit = $p->penanganan;
+      foreach ($kerusakan as $p) {
+        if ($r->kode_kerusakan==$p->kode_kerusakan) {
+          $golkerusakan = $p->nama_kerusakan;
+          $golidkerusakan = $p->id_kerusakan;
+          $golpenanganankerusakan = $p->penanganan;
         }
       }
     }
@@ -70,7 +68,7 @@
                   <span class="info-box-icon bg-yellow"><i class="fa fa-warning"></i></span>
                   <div class="info-box-content">
                     <h4>Hasil diagnosa :</h4>
-                    Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golpenyakit; ?></b>
+                    Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golkerusakan; ?></b>
                   </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
 
@@ -85,7 +83,7 @@
                   <h3 class="box-title">Penanganan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
                 </div>
                 <div class="box-body">
-                  <?php echo $golpenangananpenyakit; ?>
+                  <?php echo $golpenanganankerusakan; ?>
                 </div>
               </div>
 
@@ -106,14 +104,14 @@
                   //echo $most_similar['kode'];
                   foreach ($rule as $rul) {
                     if ($most_similar['kode'] == $rul->kode_rule) {
-                      $most_similar_penyakit = $rul->kode_penyakit;
+                      $most_similar_kerusakan = $rul->kode_kerusakan;
                     }
                   }
-                  foreach ($penyakit as $p) {
-                    if ($p->kode_penyakit == $most_similar_penyakit) {
-                      $golpenyakit = $p->nama_penyakit;
-                      $golidpenyakit = $p->id_penyakit;
-                      $golpenangananpenyakit = $p->penanganan;
+                  foreach ($kerusakan as $p) {
+                    if ($p->kode_kerusakan == $most_similar_kerusakan) {
+                      $golkerusakan = $p->nama_kerusakan;
+                      $golidkerusakan = $p->id_kerusakan;
+                      $golpenanganankerusakan = $p->penanganan;
                     }
                   }
                   ?>
@@ -122,7 +120,7 @@
                       <span class="info-box-icon bg-yellow"><i class="fa fa-warning"></i></span>
                       <div class="info-box-content">
                         <h4>Hasil diagnosa :</h4>
-                        Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golpenyakit; ?></b>
+                        Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golkerusakan; ?></b>
                       </div><!-- /.info-box-content -->
                   </div><!-- /.info-box -->
 
@@ -137,7 +135,7 @@
                       <h3 class="box-title">Penanganan</h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
                     </div>
                     <div class="box-body">
-                      <?php echo $golpenangananpenyakit; ?>
+                      <?php echo $golpenanganankerusakan; ?>
                     </div>
                   </div>
                   <?php

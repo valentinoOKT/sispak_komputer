@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Hasil
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Kerusakan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-list"></i> Hasil</a></li>
@@ -18,7 +18,7 @@
     $id_jawaban = $value->id_jawaban;
   }
   $exjawaban = explode (" ",$jawaban);
-  foreach ($penyakit as $keys) {
+  foreach ($kerusakan as $keys) {
     $rule = $keys->ketentuan;
   }
   $exrule = explode (" ",$rule);
@@ -38,9 +38,9 @@
                 <span class="info-box-icon bg-blue"><i class="fa fa-star"></i></span>
                 <div class="info-box-content">
                   <h4>Hasil diagnosa :</h4>
-                  Domba kemungkinan <mark>terkena</mark> penyakit <b><?php
-                  foreach ($penyakit as $key) {
-                    echo $key->nama_penyakit;
+                  Komputer kemungkinan <mark>mengalami</mark> kerusakan <b><?php
+                  foreach ($kerusakan as $key) {
+                    echo $key->nama_kerusakan;
                   }
                   ?></b>
                 </div><!-- /.info-box-content -->
@@ -59,16 +59,16 @@
                 <div class="info-box-content">
                   <h4>Hasil diagnosa :</h4>
                   <span class="progress-description">
-                    Domba sepertinya <mark>tidak terkena</mark> penyakit <b><?php
-                    foreach ($penyakit as $key) {
-                      echo $key->nama_penyakit;
+                    Domba sepertinya <mark>tidak terkena</mark> kerusakan <b><?php
+                    foreach ($kerusakan as $key) {
+                      echo $key->nama_kerusakan;
                     }
                     ?></b>
                   </span>
                 </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
 
-            <h4>Anda bisa mencoba kembali dengan penyakit yang lain <a href="<?php echo base_url(); ?>konsultasi">konsultasi</a>.</h4>
+            <h4>Anda bisa mencoba kembali dengan kerusakan yang lain <a href="<?php echo base_url(); ?>konsultasi">konsultasi</a>.</h4>
             <br>
             <?php
             }?>

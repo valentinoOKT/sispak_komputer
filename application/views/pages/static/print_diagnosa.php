@@ -19,13 +19,11 @@
       $exketentuan = explode(" ",$ketentuan);
       if ($exketentuan==$ar_jawab) {
         $golrule = explode(" ",$ketentuan);
-        foreach ($penyakit as $p) {
-          if ($r->kode_penyakit==$p->kode_penyakit) {
-            $golpenyakit = $p->nama_penyakit;
-            $golidpenyakit = $p->id_penyakit;
-            $golpenjelasanpenyakit = $p->penjelasan;
-            $golgejalapenyakit = $p->gejala;
-            $golpenangananpenyakit = $p->penanganan;
+        foreach ($kerusakan as $p) {
+          if ($r->kode_kerusakan==$p->kode_kerusakan) {
+            $golkerusakan = $p->nama_kerusakan;
+            $golidkerusakan = $p->id_kerusakan;
+            $golpenanganankerusakan = $p->penanganan;
           }
         }
       }
@@ -37,7 +35,7 @@
     if ($jawaban=="") {
     ?>
       <h2>Hasil diagnosa :</h2>
-      Hasil diagnosa domba tidak diketahui
+      Hasil diagnosa kerusakan komputer tidak diketahui
       <br>
       <h4>Anda bisa mencoba diagnosa kembali</h4>
       <br>
@@ -46,14 +44,10 @@
       if ($golrule==$ar_jawab) {
       ?>
       <h2>Hasil diagnosa :</h2>
-      Domba kemungkinan terkena penyakit <b><?php echo $golpenyakit; ?></b>
+      komputer kemungkinan mengalami <b><?php echo $golkerusakan; ?></b>
       <br>
-      <h3>Penjelasan</h3>
-      <?php echo $golpenjelasanpenyakit; ?>
-      <h3>Gejala</h3>
-      <?php echo $golgejalapenyakit; ?>
       <h3>Penanganan</h3>
-      <?php echo $golpenangananpenyakit; ?>
+      <?php echo $golpenanganankerusakan; ?>
       <?php
       }else {
           foreach ($rule as $ru) {
@@ -71,28 +65,22 @@
           //echo $most_similar['kode'];
           foreach ($rule as $rul) {
             if ($most_similar['kode'] == $rul->kode_rule) {
-              $most_similar_penyakit = $rul->kode_penyakit;
+              $most_similar_kerusakan = $rul->kode_kerusakan;
             }
           }
-          foreach ($penyakit as $p) {
-            if ($p->kode_penyakit == $most_similar_penyakit) {
-              $golpenyakit = $p->nama_penyakit;
-              $golidpenyakit = $p->id_penyakit;
-              $golpenjelasanpenyakit = $p->penjelasan;
-              $golgejalapenyakit = $p->gejala;
-              $golpenangananpenyakit = $p->penanganan;
+          foreach ($kerusakan as $p) {
+            if ($p->kode_kerusakan == $most_similar_kerusakan) {
+              $golkerusakan = $p->nama_kerusakan;
+              $golidkerusakan = $p->id_kerusakan;
+              $golpenanganankerusakan = $p->penanganan;
             }
           }
           ?>
           <h2>Hasil diagnosa :</h2>
-          Domba kemungkinan terkena penyakit <b><?php echo $golpenyakit; ?></b>
+          Domba kemungkinan terkena kerusakan <b><?php echo $golkerusakan; ?></b>
           <br>
-          <h3>Penjelasan</h3>
-          <?php echo $golpenjelasanpenyakit; ?>
-          <h3>Gejala</h3>
-          <?php echo $golgejalapenyakit; ?>
           <h3>Penanganan</h3>
-          <?php echo $golpenangananpenyakit; ?>
+          <?php echo $golpenanganankerusakan; ?>
           <?php
         }
       }

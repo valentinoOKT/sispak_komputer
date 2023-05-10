@@ -1,5 +1,3 @@
-
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -63,6 +61,17 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
+                    <div class="about-single p-3 d-flex justify-content-between">
+                        <div class="about-icon mr-3">
+                            <i class="fas fa-drafting-compass" aria-hidden="true"></i>
+                        </div>
+                        <div class="about-content">
+                            <h5 class="mb-3">How we Work</h5>
+                            <p>Kami bekerja sama dengan pakar, yaitu seorang servis komputer yang ahli mengenai kerusakan hardware komputer sebagai sumber data kami.</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-4 col-md-6">
                         <div class="about-single p-3 d-flex justify-content-between">
                             <div class="about-icon mr-3">
                                 <i class="fas fa-industry" aria-hidden="true"></i>
@@ -78,41 +87,6 @@
         </section>
         <!-- //banner bottom section -->
 
-
-        <!-- services section -->
-        <section class="w3l-bottom-grids-6 service-w3l-bg py-5" id="services">
-            <div class="container py-md-5 py-4">
-                <div class="titlef-main text-center mx-auto mb-5" style="max-width:600px;">
-                    <p class="mt-2 text-white">Our Services</p>
-                    <h3 class="titlef-style text-white">Layanan Diagnosa Modern Yang Mudah Dan Cepat</h3>
-                </div>
-                <div class="row pt-md-4 justify-content-center">
-                    <div class="col-lg-4 col-md-6 grids-feature">
-                        <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/servis_160.jpg" alt=" ">
-                            <h4><a href="#feature" class="titlef-head">Diagnosa Mudah</a></h4>
-                            <p>Hanya dengan menjawab pertanyaan-pertanyaan yang ada, anda bisa mendapatkan hasil diagnosa yang akurat.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-sm-5 mt-4">
-                        <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/Komputer_160.jpg" alt=" ">
-                            <h4><a href="#feature" class="titlef-head">Cetak Hasil</a></h4>
-                            <p>Anda dapat mencetak hasil diagnosa yang muncul untuk memudahkan anda dalam menangani kerusakan yang sama nantinya.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-sm-5 mt-4">
-                        <div class="area-box">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sispak_160.jpg" alt=" ">
-                            <h4><a href="#feature" class="titlef-head">Tips Perawatan</a></h4>
-                            <p>Terdapat berbagai tips penanganan kerusakan hardware komputer yang bisa anda lihat pada website ini.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <!-- footer -->
         <footer class="w3l-footer-29-main">
             <div class="footer-29-w3l py-5">
@@ -120,7 +94,7 @@
                     <div class="row footer-top-29">
                         <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                             <div class="footer-logo mb-3">
-                                <a class="footer-brand-logo" href="<?php echo base_url(); ?>landing"><img src="<?php echo base_url(); ?>assets/img/ses_160x47.png" alt="logo"></a>
+                                <a class="footer-brand-logo" href="<?php echo base_url(); ?>home"><img src="<?php echo base_url(); ?>assets/img/spk_160.png" alt="logo"></a>
                             </div>
                             <p>Website sistem pakar untuk membantu mendiagnosis kerusakan hardware komputer.</p>
                             <!--div class="main-social-footer-29 mt-4">

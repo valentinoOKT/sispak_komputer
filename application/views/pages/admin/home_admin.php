@@ -15,9 +15,9 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Penyakit</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">kerusakan</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
-                        <?php echo $penyakit; ?>
+                        <?php echo $kerusakan; ?>
                       </div>
                     </div>
                     <div class="col-auto">
@@ -80,7 +80,7 @@
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="<?php echo base_url('admin/penyakit'); ?>">Penyakit</a>
+                      <a class="dropdown-item" href="<?php echo base_url('admin/kerusakan'); ?>">kerusakan</a>
                       <a class="dropdown-item" href="<?php echo base_url('admin/gejala'); ?>">Gejala</a>
                       <a class="dropdown-item" href="<?php echo base_url('admin/rule'); ?>">Rule</a>
                     </div>
@@ -106,7 +106,7 @@
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="<?php echo base_url('admin/penyakit'); ?>">Penyakit</a>
+                      <a class="dropdown-item" href="<?php echo base_url('admin/kerusakan'); ?>">kerusakan</a>
                       <a class="dropdown-item" href="<?php echo base_url('admin/gejala'); ?>">Gejala</a>
                       <a class="dropdown-item" href="<?php echo base_url('admin/rule'); ?>">Rule</a>
                     </div>
@@ -119,7 +119,7 @@
                   </div>
                   <div class="mt-4 text-center small">
                     <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Penyakit
+                      <i class="fas fa-circle text-primary"></i> kerusakan
                     </span>
                     <span class="mr-2">
                       <i class="fas fa-circle text-success"></i> Gejala

@@ -121,40 +121,38 @@ INSERT INTO `tb_gejala` (`id_gejala`, `gejala`, `kode_gejala`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tb_penyakit`
+-- Struktur dari tabel `tb_kerusakan`
 --
 
-CREATE TABLE `tb_penyakit` (
-  `id_penyakit` int(10) NOT NULL,
-  `kode_penyakit` varchar(5) NOT NULL,
-  `nama_penyakit` varchar(60) NOT NULL,
-  `penjelasan` varchar(5000) NOT NULL,
-  `gejala` varchar(5000) NOT NULL,
+CREATE TABLE `tb_kerusakan` (
+  `id_kerusakan` int(10) NOT NULL,
+  `kode_kerusakan` varchar(5) NOT NULL,
+  `nama_kerusakan` varchar(60) NOT NULL,
   `penanganan` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tb_penyakit`
+-- Dumping data untuk tabel `tb_kerusakan`
 --
 
-INSERT INTO `tb_penyakit` (`id_penyakit`, `kode_penyakit`, `nama_penyakit`, `penjelasan`, `gejala`, `penanganan`) VALUES
-(1, 'P1', 'Monitor', '-\r\n', '-\r\n', 'Terdapat kerusakan pada monitor komputer. Periksa refresh rate vertikal monitor Anda. Pertama klik tombol Start - kemudian klik Run - Lalu Ketikkan control kemudian klik tombol OK. Carilah ikon berlabel Display dan klik dua kali. Pada jendela Display Properties klik tab Settings - Kemudian Klik tombol Advanced dan kemudian klik tab monitor. Di bawah bagian Monitor settings Anda akan melihat menu dropdown berlabel Screen refresh rate, dan pastikan bahwa refresh rate layar 75Hz atau lebih. Jika sudah silahkan merestart ulang komputer agar pengaturan baru ini bisa bekerja. Langkah kedua bisa dengan memperbarui Driver VGA Card. Langkah terakhir apabila masih belum bisa juga adalah melakukan service monitor di tempat service. Monitor dapat dibawa ke tempat servis monitor untuk ditangani ahli monitor.'),
-(2, 'P2', 'Memori', '-', '-', 'Periksalah kembali RAM yang terpasang dengan kapasitas memori yang terbaca oleh komputer sebab ada \r\nkalanya ketika memasang beberapa keping RAM tetapi yang terbaca hanya satu keping saja. Beberapa RAM yang digunakan tetapi tidak identik (sama tipe dan kapasitasnya) bukannya malah mempercepat komputer tetapi malah memperlambat dan membuat hang komputer. Jika masih tidak bisa, buka cover CPU lalu cabut RAM. Coba bersihkan bagian kaki RAM (pin) dengan penghapus dan pasang RAM kembali pada tempatnya dan nyalakan kembali Komputer. jika belum bisa, pindahkan RAM di slot lain. Jika masih belum bisa juga, maka RAM perlu diganti atau cek di komputer lain'),
-(3, 'P3', 'HDD', '-', '-', 'Lakukan pengecekan kondisi kabel IDE atau SATA pada Hardisk - pastikan sudah terpasang dengan benar. Untuk 2 hardisk IDE yang terpasang pada 1 kabel cek posisi jumper untuk setingan Master dan Slavenya supaya jangan tertukar. Cek apakah Hardisk sudah terdeteksi oleh BIOS atau belum. Coba di-detect satu persatu. Kalau BIOS tidak bisa mendeteksi berarti masalahnya ada pada hardisk tersebut. Coba pegang permukaan hardisk. Untuk hardisk yang hidup akan terasa getarannya.'),
-(4, 'P4', 'VGA ', '-', '-', 'Coba lepas dulu VGA Card/kaki VGA Card atau pin-nya dibersihkan dan dipasangkan kembali dengan benar. Jika belum bisa maka coba ganti VGA Card dengan yang lain dulu atau cek di komputer lain'),
-(5, 'P5', 'Sound card', '-', '-', 'Kalau komputer anda menggunakan sound card on board maka yang harus anda perbaiki adalah motherboarnya. Kalau sound card anda jenis add on,  silahkan anda copot suond card dari slotnya. Bersihkan dari debu-debu yang menempel. Kemudian bersihkan juga kaki-kaki sound card.'),
-(6, 'P6', 'Power supply', '-', '-', 'Hubungkan kabel power ke Power Supply dengan benar dan jangan sampai longgar.'),
-(7, 'P7', 'Prosessor', '-', '-', 'Cek kondisi Heatsink dan fan Processor. Apakah fan masih bisa berputar atau kotor atau bahkan ada kerusakan sehingga fan terlepas dari dudukannya. Bersihkan fan atau heatsink apabila kotor. Kalau komputer masih bisa masuk ke BIOS maka temperatur processor ini bisa dilihat pada bagian Hardware Monitor. '),
-(8, 'P8', 'Memori kurang', '-', '-', 'Upgrade memory card anda menjadi yang lebih baik'),
-(9, 'P9', 'Memori VGA kurang', '-', '-', 'Upgrade memory VGA anda menjadi yang lebih baik'),
-(10, 'P10', 'Clock prosessor kurang', '-', '-', 'Perlu mengganti processor menjadi lebih baik lagi'),
-(11, 'P11', 'Permasalahan pada BIOS', '-', '-', 'Periksa kabel IDE apakah sudah dipasang dengan benar dan juga periksa apakah device tersebut sudah diaktifkan dengan benar tau belum. Jika belum diaktikan, perlu diaktifkan  melalui sistem. Jika masih belum bisa, coba bawa ketempat servis komputer untuk mengganti kabel IDE.'),
-(12, 'P12', 'Power supply kekurangan daya', '-', '-', 'Gunakan stabilizer atau UPS untuk menstabilkan tegangan listrik. Periksa semua koneksi kabel power supply. Terdapat beberapa kabel koneksi yang berasal dari power supply dan memiliki fungsi yang berbeda-beda. Pastikan semua kabel terpasang dengan benar dan tidak ada yang longgar. Hal ini dilakukan untuk memastikan pasokan daya listrik bekerja secara optimal. Apabila semua kabel sudah terpasang dengan benar dan masih mati total maka perlu diganti dengan yang baru. Jika masih kekurangan daya, silahkan anda coba menganti power supply.'),
-(13, 'P13', 'Perangkat USB rusak', '-', '-', 'CPU perlu dibawa ke tempat service untuk ditindaklanjuti lebih jauh.'),
-(14, 'P14', 'Keyboard rusak', '-', '-', 'Bersihkan keyboard dari debu, kemudian coba update driver keyboard. Jika masih rusak, silahkan ganti keyboard anda.'),
-(15, 'P15', 'Mouse rusak', '-', '-', 'Coba update driver mouse. Jika masih rusak, silahkan ganti mouse anda.'),
-(16, 'P16', 'Motherboard rusak', '-', '-', 'Perlu diganti dengan motherboard yang baru dan sama seperti tipe sebelumnya atau bisa juga dengan membawa langsung ke tempat produsen komputer tersebut.'),
-(17, 'P17', 'OS bermasalah', '-', '-', 'Lakukan install ulang Windows atau repair Windows');
+INSERT INTO `tb_kerusakan` (`id_kerusakan`, `kode_kerusakan`, `nama_kerusakan`, `penanganan`) VALUES
+(1, 'K1', 'Monitor', 'Terdapat kerusakan pada monitor komputer. Periksa refresh rate vertikal monitor Anda. Pertama klik tombol Start - kemudian klik Run - Lalu Ketikkan control kemudian klik tombol OK. Carilah ikon berlabel Display dan klik dua kali. Pada jendela Display Properties klik tab Settings - Kemudian Klik tombol Advanced dan kemudian klik tab monitor. Di bawah bagian Monitor settings Anda akan melihat menu dropdown berlabel Screen refresh rate, dan pastikan bahwa refresh rate layar 75Hz atau lebih. Jika sudah silahkan merestart ulang komputer agar pengaturan baru ini bisa bekerja. Langkah kedua bisa dengan memperbarui Driver VGA Card. Langkah terakhir apabila masih belum bisa juga adalah melakukan service monitor di tempat service. Monitor dapat dibawa ke tempat servis monitor untuk ditangani ahli monitor.'),
+(2, 'K2', 'Memori', 'Periksalah kembali RAM yang terpasang dengan kapasitas memori yang terbaca oleh komputer sebab ada \r\nkalanya ketika memasang beberapa keping RAM tetapi yang terbaca hanya satu keping saja. Beberapa RAM yang digunakan tetapi tidak identik (sama tipe dan kapasitasnya) bukannya malah mempercepat komputer tetapi malah memperlambat dan membuat hang komputer. Jika masih tidak bisa, buka cover CPU lalu cabut RAM. Coba bersihkan bagian kaki RAM (pin) dengan penghapus dan pasang RAM kembali pada tempatnya dan nyalakan kembali Komputer. jika belum bisa, pindahkan RAM di slot lain. Jika masih belum bisa juga, maka RAM perlu diganti atau cek di komputer lain'),
+(3, 'K3', 'HDD', 'Lakukan pengecekan kondisi kabel IDE atau SATA pada Hardisk - pastikan sudah terpasang dengan benar. Untuk 2 hardisk IDE yang terpasang pada 1 kabel cek posisi jumper untuk setingan Master dan Slavenya supaya jangan tertukar. Cek apakah Hardisk sudah terdeteksi oleh BIOS atau belum. Coba di-detect satu persatu. Kalau BIOS tidak bisa mendeteksi berarti masalahnya ada pada hardisk tersebut. Coba pegang permukaan hardisk. Untuk hardisk yang hidup akan terasa getarannya.'),
+(4, 'K4', 'VGA ', 'Coba lepas dulu VGA Card/kaki VGA Card atau pin-nya dibersihkan dan dipasangkan kembali dengan benar. Jika belum bisa maka coba ganti VGA Card dengan yang lain dulu atau cek di komputer lain'),
+(5, 'K5', 'Sound card', 'Kalau komputer anda menggunakan sound card on board maka yang harus anda perbaiki adalah motherboarnya. Kalau sound card anda jenis add on,  silahkan anda copot suond card dari slotnya. Bersihkan dari debu-debu yang menempel. Kemudian bersihkan juga kaki-kaki sound card.'),
+(6, 'K6', 'Power supply', 'Hubungkan kabel power ke Power Supply dengan benar dan jangan sampai longgar.'),
+(7, 'K7', 'Prosessor', 'Cek kondisi Heatsink dan fan Processor. Apakah fan masih bisa berputar atau kotor atau bahkan ada kerusakan sehingga fan terlepas dari dudukannya. Bersihkan fan atau heatsink apabila kotor. Kalau komputer masih bisa masuk ke BIOS maka temperatur processor ini bisa dilihat pada bagian Hardware Monitor. '),
+(8, 'K8', 'Memori kurang', 'Upgrade memory card anda menjadi yang lebih baik'),
+(9, 'K9', 'Memori VGA kurang', 'Upgrade memory VGA anda menjadi yang lebih baik'),
+(10, 'K10', 'Clock prosessor kurang', 'Perlu mengganti processor menjadi lebih baik lagi'),
+(11, 'K11', 'Permasalahan pada BIOS', 'Periksa kabel IDE apakah sudah dipasang dengan benar dan juga periksa apakah device tersebut sudah diaktifkan dengan benar tau belum. Jika belum diaktikan, perlu diaktifkan  melalui sistem. Jika masih belum bisa, coba bawa ketempat servis komputer untuk mengganti kabel IDE.'),
+(12, 'K12', 'Power supply kekurangan daya', 'Gunakan stabilizer atau UPS untuk menstabilkan tegangan listrik. Periksa semua koneksi kabel power supply. Terdapat beberapa kabel koneksi yang berasal dari power supply dan memiliki fungsi yang berbeda-beda. Pastikan semua kabel terpasang dengan benar dan tidak ada yang longgar. Hal ini dilakukan untuk memastikan pasokan daya listrik bekerja secara optimal. Apabila semua kabel sudah terpasang dengan benar dan masih mati total maka perlu diganti dengan yang baru. Jika masih kekurangan daya, silahkan anda coba menganti power supply.'),
+(13, 'K13', 'Perangkat USB rusak', 'CPU perlu dibawa ke tempat service untuk ditindaklanjuti lebih jauh.'),
+(14, 'K14', 'Keyboard rusak', 'Bersihkan keyboard dari debu, kemudian coba update driver keyboard. Jika masih rusak, silahkan ganti keyboard anda.'),
+(15, 'K15', 'Mouse rusak', 'Coba update driver mouse. Jika masih rusak, silahkan ganti mouse anda.'),
+(16, 'K16', 'Motherboard rusak', 'Perlu diganti dengan motherboard yang baru dan sama seperti tipe sebelumnya atau bisa juga dengan membawa langsung ke tempat produsen komputer tersebut.'),
+(17, 'K17', 'OS bermasalah', 'Lakukan install ulang Windows atau repair Windows');
 
 -- --------------------------------------------------------
 
@@ -166,31 +164,31 @@ CREATE TABLE `tb_rule` (
   `id_rule` int(5) NOT NULL,
   `kode_rule` varchar(5) NOT NULL,
   `kode_gejala` varchar(1000) NOT NULL,
-  `kode_penyakit` varchar(5) NOT NULL
+  `kode_kerusakan` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `tb_rule`
 --
 
-INSERT INTO `tb_rule` (`id_rule`, `kode_rule`, `kode_gejala`, `kode_penyakit`) VALUES
-(1, 'R1', 'G1 G2 G26', 'P1'),
-(2, 'R2', 'G3 G4 G5 G11 G12 G30', 'P2'),
-(3, 'R3', 'G6 G7 G8 G10 G21 G22 G31', 'P3'),
-(4, 'R4', 'G1 G3 G5 G9 G10 G12 G13', 'P4'),
-(5, 'R5', 'G10 G13 G14', 'P5'),
-(6, 'R6', 'G16 G17', 'P6'),
-(7, 'R7', 'G1 G3 G4 G5', 'P7'),
-(8, 'R8', 'G18 G19', 'P8'),
-(9, 'R9', 'G19 G20', 'P9'),
-(10, 'R10', 'G19', 'P10'),
-(11, 'R11', 'G21', 'P11'),
-(12, 'R12', 'G5 G23', 'P12'),
-(13, 'R13', 'G10', 'P13'),
-(14, 'R14', 'G10 G24 G27', 'P14'),
-(15, 'R15', 'G10 G25', 'P15'),
-(16, 'R16', 'G28 G29', 'P16'),
-(17, 'R17', 'G11 G15', 'P17');
+INSERT INTO `tb_rule` (`id_rule`, `kode_rule`, `kode_gejala`, `kode_kerusakan`) VALUES
+(1, 'R1', 'G1 G2 G26', 'K1'),
+(2, 'R2', 'G3 G4 G5 G11 G12 G30', 'K2'),
+(3, 'R3', 'G6 G7 G8 G10 G21 G22 G31', 'K3'),
+(4, 'R4', 'G1 G3 G5 G9 G10 G12 G13', 'K4'),
+(5, 'R5', 'G10 G13 G14', 'K5'),
+(6, 'R6', 'G16 G17', 'K6'),
+(7, 'R7', 'G1 G3 G4 G5', 'K7'),
+(8, 'R8', 'G18 G19', 'K8'),
+(9, 'R9', 'G19 G20', 'K9'),
+(10, 'R10', 'G19', 'K10'),
+(11, 'R11', 'G21', 'K11'),
+(12, 'R12', 'G5 G23', 'K12'),
+(13, 'R13', 'G10', 'K13'),
+(14, 'R14', 'G10 G24 G27', 'K14'),
+(15, 'R15', 'G10 G25', 'K15'),
+(16, 'R16', 'G28 G29', 'K16'),
+(17, 'R17', 'G11 G15', 'K17');
 
 --
 -- Indexes for dumped tables
@@ -215,10 +213,10 @@ ALTER TABLE `tb_gejala`
   ADD PRIMARY KEY (`id_gejala`);
 
 --
--- Indeks untuk tabel `tb_penyakit`
+-- Indeks untuk tabel `tb_kerusakan`
 --
-ALTER TABLE `tb_penyakit`
-  ADD PRIMARY KEY (`id_penyakit`);
+ALTER TABLE `tb_kerusakan`
+  ADD PRIMARY KEY (`id_kerusakan`);
 
 --
 -- Indeks untuk tabel `tb_rule`
@@ -249,10 +247,10 @@ ALTER TABLE `tb_gejala`
   MODIFY `id_gejala` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
--- AUTO_INCREMENT untuk tabel `tb_penyakit`
+-- AUTO_INCREMENT untuk tabel `tb_kerusakan`
 --
-ALTER TABLE `tb_penyakit`
-  MODIFY `id_penyakit` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+ALTER TABLE `tb_kerusakan`
+  MODIFY `id_kerusakan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_rule`

@@ -22,7 +22,7 @@ class Konsultasi_control extends CI_Controller
 
   public function konsultasi(){
 
-    $data['penyakit']=$this->Konsultasi_model->daftar_penyakit();
+    $data['kerusakan']=$this->Konsultasi_model->daftar_kerusakan();
 
     $this->load->view('pages/static/header');
     $this->load->view('pages/forms/home',$data);
@@ -33,7 +33,7 @@ class Konsultasi_control extends CI_Controller
   public function pertanyaan(){
     $data['pertanyaan'] = $this->Konsultasi_model->daftar_pertanyaan()->result();
     $data['jumlah_pertanyaan'] = $this->Konsultasi_model->daftar_pertanyaan()->num_rows();
-    $data['penyakit'] = $this->Konsultasi_model->get_penyakit()->result();
+    $data['kerusakan'] = $this->Konsultasi_model->get_kerusakan()->result();
 
     $this->load->view('pages/static/header');
     $this->load->view('pages/forms/daftar_pertanyaan',$data);
@@ -43,7 +43,7 @@ class Konsultasi_control extends CI_Controller
 
   public function api_pertanyaan(){
     $pertanyaan = $this->Konsultasi_model->daftar_pertanyaan()->result();
-    $penyakit = $this->Konsultasi_model->get_penyakit()->result();
+    $kerusakan = $this->Konsultasi_model->get_kerusakan()->result();
 
     /*
     foreach ($data['pertanyaan'] as $value) {
@@ -52,7 +52,7 @@ class Konsultasi_control extends CI_Controller
     }*/
     $response = array(
       'pertanyaan' => $pertanyaan,
-      'penyakit' => $penyakit
+      'kerusakan' => $kerusakan
     );
 
     echo json_encode($response);
@@ -90,7 +90,7 @@ class Konsultasi_control extends CI_Controller
     $id = $this->uri->segment(2);
     $data['hasil'] = $this->Konsultasi_model->get_riwayatid($id)->result();
     $data['rule'] = $this->Konsultasi_model->get_rule()->result();
-    $data['penyakit'] = $this->Konsultasi_model->get_penyakit()->result();
+    $data['kerusakan'] = $this->Konsultasi_model->get_kerusakan()->result();
 
     $this->load->view('pages/static/header');
     $this->load->view('pages/forms/hasildiagnosa',$data);
@@ -101,17 +101,17 @@ class Konsultasi_control extends CI_Controller
     $id = $this->uri->segment(2);
     $hasil = $this->Konsultasi_model->get_riwayatid($id)->result();
     foreach ($hasil as $key) {
-      $id_penyakit = $key->id_penyakit;
+      $id_kerusakan = $key->id_kerusakan;
     }
-    $penyakit = $this->Konsultasi_model->get_NamaPenyakit($id_penyakit)->result();
-    $pertanyaan = $this->Konsultasi_model->daftar_pertanyaan($id_penyakit)->result();
+    $kerusakan = $this->Konsultasi_model->get_Namakerusakan($id_kerusakan)->result();
+    $pertanyaan = $this->Konsultasi_model->daftar_pertanyaan($id_kerusakan)->result();
 
     foreach ($hasil as $value) {
       $jawaban = $value->jawaban;
       $id_jawaban = $value->id_jawaban;
     }
     $exjawaban = explode (" ",$jawaban);
-    foreach ($penyakit as $keys) {
+    foreach ($kerusakan as $keys) {
       $rule = $keys->ketentuan;
     }
     $exrule = explode (" ",$rule);
@@ -146,7 +146,7 @@ class Konsultasi_control extends CI_Controller
       $id_jawabans = $values->id_jawaban;
     }
     $exjawabans = explode (" ",$jawabans);
-    foreach ($penyakit as $keyss) {
+    foreach ($kerusakan as $keyss) {
       $rules = $keyss->ketentuan;
     }
     $exrules = explode (" ",$rules);
@@ -195,7 +195,7 @@ class Konsultasi_control extends CI_Controller
     $id = $this->uri->segment(2);
     $data['hasil'] = $this->Konsultasi_model->get_riwayatid($id)->result();
     $data['rule'] = $this->Konsultasi_model->get_rule()->result();
-    $data['penyakit'] = $this->Konsultasi_model->get_penyakit()->result();
+    $data['kerusakan'] = $this->Konsultasi_model->get_kerusakan()->result();
 
     $this->load->view('pages/static/print_diagnosa',$data);
   }

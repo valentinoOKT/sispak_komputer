@@ -25,47 +25,45 @@ class Admin_model extends CI_Model
 
 
 
-  //------------------penyakit----------------------------------------------------------
-  public function getAll_penyakit(){
+  //------------------kerusakan----------------------------------------------------------
+  public function getAll_kerusakan(){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
+    $this->db->from('tb_kerusakan');
     $query = $this->db->get();
     return $query;
   }
 
-  public function get_penyakit($where){
+  public function get_kerusakan($where){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
+    $this->db->from('tb_kerusakan');
     $this->db->where($where);
     $query = $this->db->get();
     return $query;
   }
 
-  public function cek_kode($kode_penyakit){
+  public function cek_kode($kode_kerusakan){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
-    $this->db->where('kode_penyakit = ',$kode_penyakit);
+    $this->db->from('tb_kerusakan');
+    $this->db->where('kode_kerusakan = ',$kode_kerusakan);
     $query = $this->db->get();
     return $query;
   }
 
-  public function insert_penyakit($data){
-    $this->db->set('kode_penyakit',$data['kode_penyakit']);
-    $this->db->set('nama_penyakit',$data['nama_penyakit']);
-    $this->db->set('penjelasan',$data['penjelasan']);
-    $this->db->set('gejala',$data['gejala']);
+  public function insert_kerusakan($data){
+    $this->db->set('kode_kerusakan',$data['kode_kerusakan']);
+    $this->db->set('nama_kerusakan',$data['nama_kerusakan']);
     $this->db->set('penanganan',$data['penanganan']);
-    $this->db->insert('tb_penyakit');
+    $this->db->insert('tb_kerusakan');
   }
 
-  public function update_penyakit($data,$id_penyakit){
-    $this->db->where('id_penyakit = ',$id_penyakit);
-    $this->db->update('tb_penyakit',$data);
+  public function update_kerusakan($data,$id_kerusakan){
+    $this->db->where('id_kerusakan = ',$id_kerusakan);
+    $this->db->update('tb_kerusakan',$data);
   }
 
-  public function delete_penyakit($id_penyakit){
-    $this->db->where('id_penyakit = ',$id_penyakit);
-    $this->db->delete('tb_penyakit');
+  public function delete_kerusakan($id_kerusakan){
+    $this->db->where('id_kerusakan = ',$id_kerusakan);
+    $this->db->delete('tb_kerusakan');
   }
 
   //------------------gejala----------------------------------------------------------
@@ -135,7 +133,7 @@ class Admin_model extends CI_Model
   public function insert_rule($data){
     $this->db->set('kode_rule',$data['kode_rule']);
     $this->db->set('kode_gejala',$data['kode_gejala']);
-    $this->db->set('kode_penyakit',$data['kode_penyakit']);
+    $this->db->set('kode_kerusakan',$data['kode_kerusakan']);
     $this->db->insert('tb_rule');
   }
 

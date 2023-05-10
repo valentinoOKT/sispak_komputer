@@ -94,8 +94,8 @@
       </div>
       <div class="media-body">
         <h3 class="media-heading">Sheep Expert System</h3>
-        <p>Sistem Pakar Diagnosa Penyakit Domba menggunakan Metode Backward Chaining berbasis WEB merupakan suatu sistem yang mendiagnosa penyakit melalui indikasi penyakit lalu muncul gejala yang dialami oleh Domba.
-          Dengan menggunakan sistem ini, peternak domba lebih gampang mengetahui penyakit yang dialami oleh hewan peliharannya tanpa harus menemui seorang Dokter dan Rumah Sakit</p>
+        <p>Sistem Pakar Diagnosa kerusakan Domba menggunakan Metode Backward Chaining berbasis WEB merupakan suatu sistem yang mendiagnosa kerusakan melalui indikasi kerusakan lalu muncul gejala yang dialami oleh Domba.
+          Dengan menggunakan sistem ini, peternak domba lebih gampang mengetahui kerusakan yang dialami oleh hewan peliharannya tanpa harus menemui seorang Dokter dan Rumah Sakit</p>
       </div>
     <br>
     </div>
@@ -107,7 +107,7 @@
       </div>
       <div class="media-body">
         <h3 class="media-heading">Diagnosa Domba</h3>
-        <p>Daftar pertanyaan ini disusun oleh seorang ahli berpengalaman dibidang penyakit domba yaitu drh. Pandu Tokoh Amukti.
+        <p>Daftar pertanyaan ini disusun oleh seorang ahli berpengalaman dibidang kerusakan domba yaitu drh. Pandu Tokoh Amukti.
           Seorang dokter hewan yang beralamat di Perumahan Tamansari Indah Jl. Cendana 7 RT 15/06, Tamansari, Bondowoso.
           Saat ini bekerja sebagai dokter hewan di Puskesmas Hewan Tamanan, Bondowoso.</p>
       </div>
@@ -126,7 +126,7 @@
                 <div class="info-box-content">
                   <h4>Jawablah pertanyaan berikut ini :</h4>
                   <span class="progress-description">
-                    Untuk mendiagnosis penyakit domba
+                    Untuk mendiagnosis kerusakan domba
                   </span>
                 </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
@@ -175,7 +175,7 @@
               if ($p->mayor=="Y") {
               ?>
 
-              <div class="modal modal-default fade" id="modalmayor<?php echo $p->id_penyakit; ?>">
+              <div class="modal modal-default fade" id="modalmayor<?php echo $p->id_kerusakan; ?>">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -183,10 +183,10 @@
                     </div>
 
                     <?php
-                    foreach ($penyakit as $pykt) {
-                      $id_terakhir = $pykt->id_penyakit;
+                    foreach ($kerusakan as $pykt) {
+                      $id_terakhir = $pykt->id_kerusakan;
                     }
-                    $nextcode = $p->id_penyakit+1;
+                    $nextcode = $p->id_kerusakan+1;
                     if ($nextcode>$id_terakhir) {
                       $nextmodal = "#modalakhir";
                     }else {
@@ -197,7 +197,7 @@
                     <div class="modal-body">
                       <div class="center-block well">
                         <div class="text-center">
-                          <button type="button" class="btn btn-success btn-block" data-dismiss="modal" id="jwbnmayory<?php echo $no; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Ya','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_penyakit; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Ya</button>
+                          <button type="button" class="btn btn-success btn-block" data-dismiss="modal" id="jwbnmayory<?php echo $no; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Ya','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_kerusakan; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Ya</button>
                           <br>
                           <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" id="jwbnmayort<?php echo $no; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Tidak','<?php echo $code; ?>')" data-toggle="modal" data-target="<?php echo $nextmodal; ?>" data-backdrop="static" data-keyboard="false">Tidak</button>
                         </div>
@@ -213,7 +213,7 @@
               <?php
               }else {
                 foreach ($pertanyaan as $key) {
-                  if ($key->id_penyakit==$p->id_penyakit) {
+                  if ($key->id_kerusakan==$p->id_kerusakan) {
                     $end = $key->kode;
                     $ends = explode("G",$end);
                     $endsoal = $ends[1];
@@ -223,7 +223,7 @@
                 if ($excode[1]!=$endsoal) {
                 ?>
 
-                <div class="modal modal-default fade" id="modalminor<?php echo $p->id_penyakit; ?>-soal<?php echo $excode[1]; ?>">
+                <div class="modal modal-default fade" id="modalminor<?php echo $p->id_kerusakan; ?>-soal<?php echo $excode[1]; ?>">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -233,9 +233,9 @@
                       <div class="modal-body">
                         <div class="center-block well">
                           <div class="text-center">
-                            <button type="button" class="btn btn-success btn-block" data-dismiss="modal" id="jwbnminory<?php echo $excode[1]; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Ya','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_penyakit; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Ya</button>
+                            <button type="button" class="btn btn-success btn-block" data-dismiss="modal" id="jwbnminory<?php echo $excode[1]; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Ya','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_kerusakan; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Ya</button>
                             <br>
-                            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" id="jwbnminort<?php echo $excode[1]; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Tidak','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_penyakit; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Tidak</button>
+                            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" id="jwbnminort<?php echo $excode[1]; ?>" name="jwbn<?php echo $no; ?>" onclick="pencet('<?php echo $p->pertanyaan; ?>','Tidak','<?php echo $code; ?>')" data-toggle="modal" data-target="#modalminor<?php echo $p->id_kerusakan; ?>-soal<?php echo $excode[1]+1; ?>" data-backdrop="static" data-keyboard="false">Tidak</button>
                           </div>
                         </div>
                       </div>
@@ -250,7 +250,7 @@
                 }else {
                 ?>
 
-                <div class="modal modal-default fade" id="modalminor<?php echo $p->id_penyakit; ?>-soal<?php echo $excode[1]; ?>">
+                <div class="modal modal-default fade" id="modalminor<?php echo $p->id_kerusakan; ?>-soal<?php echo $excode[1]; ?>">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">

@@ -32,7 +32,7 @@
               <td><?php echo $no; ?></td>
               <td><?php echo $data->kode_rule; ?></td>
               <td><?php echo $data->kode_gejala; ?></td>
-              <td><?php echo $data->kode_penyakit; ?></td>
+              <td><?php echo $data->kode_kerusakan; ?></td>
               <td>
                 <a href="<?php echo base_url(); ?>admin/rule/edit/<?php echo $data->id_rule; ?>" class="btn btn-warning btn-icon-split btn-sm">
                     <span class="icon text-white-50">

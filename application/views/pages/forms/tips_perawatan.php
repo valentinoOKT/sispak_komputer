@@ -28,11 +28,11 @@
             </div><!-- /.info-box -->
 
             <?php
-            foreach ($penyakit as $key) {
+            foreach ($kerusakan as $key) {
             ?>
             <div class="box box-info collapsed-box">
               <div class="box-header with-border" data-widget="collapse">
-                <h3 class="box-title"><?php echo $key->nama_penyakit; ?></h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
+                <h3 class="box-title"><?php echo $key->nama_kerusakan; ?></h3><button type="button" class="btn btn-box-tool"><i class="fa fa-angle-down"></i></button>
               </div>
               <div class="box-body">
                 <?php echo $key->penanganan; ?>

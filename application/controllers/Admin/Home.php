@@ -26,7 +26,7 @@ class Home extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-    $data['penyakit'] = $this->Admin_model->getAll_penyakit()->num_rows();
+    $data['kerusakan'] = $this->Admin_model->getAll_kerusakan()->num_rows();
     $data['gejala'] = $this->Admin_model->getAll_gejala()->num_rows();
     $data['rule'] = $this->Admin_model->getAll_rule()->num_rows();
 
@@ -41,7 +41,7 @@ class Home extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-    $data['penyakit'] = $this->Admin_model->getAll_penyakit()->num_rows();
+    $data['kerusakan'] = $this->Admin_model->getAll_kerusakan()->num_rows();
     $data['gejala'] = $this->Admin_model->getAll_gejala()->num_rows();
     $data['rule'] = $this->Admin_model->getAll_rule()->num_rows();
 

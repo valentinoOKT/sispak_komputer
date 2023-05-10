@@ -3,8 +3,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Pertanyaan
-      <small>Diagnosa Kerusakan Hardware Komputer</small>
+      Diagnosa Kerusakan Hardware Komputer
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-list"></i> Pertanyaan</a></li>
@@ -93,7 +92,7 @@
         <img src="<?php echo base_url(); ?>assets/img/logo_50.png" alt="doctor" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
-        <h3 class="media-heading">Sistem Pakar Komputer</h3>
+        <h3 class="media-heading">S.P.K. (Sistem Pakar Komputer)</h3>
         <p>Sistem Pakar Diagnosa Kerusakan hardware komputer menggunakan Metode Forward Chaining berbasis WEB merupakan suatu sistem yang dapat mendiagnosa kerusakan hardware komuter berdasarkan gejala-gejala yang dialami komputer.
           Sistem ini bertujuan untuk membantu para pengguna komputer yang sering mnegalami kerusakan pada hardware komputer. Sistem ini dapat memudahkan pengguna komputer untuk menemukan kerusakan yang dialami komputer sehingga tidak perlu menemui orang servis komputer terlebih dahulu</p>
       </div>
@@ -103,7 +102,7 @@
     <!-- Left-aligned media object -->
     <div class="media">
       <div class="media-left">
-        <img src="<?php echo base_url(); ?>assets/img/doctor.png" alt="doctor" class="media-object" style="width:60px">
+        <img src="<?php echo base_url(); ?>assets/img/teknisi.jpg" alt="doctor" class="media-object" style="width:60px">
       </div>
       <div class="media-body">
         <h3 class="media-heading">Diagnosa Kerusakan Hardware Komputer</h3>

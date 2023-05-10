@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Home
-      <small>Diagnosa Domba</small>
+      <small>Diagnosa Kerusakan Hardware Komputer</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -43,26 +43,25 @@
               <div class="right">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                  <div class="item active">
-                    <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/expert_system.jpg" alt="Expert System" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>Sistem Pakar</h3>
-                    </div>
-                  </div>
+                <div class="item active">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/Komputer.jpg" alt="komputer" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Komputer</h3>
+              </div>
+            </div>
 
-                  <div class="item">
-                    <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sheep_doctor.jpg" alt="Sheep Expert" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>Doktor Hewan</h3>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sheep.jpg" alt="Sheep" style="width:100%;">
-                    <div class="carousel-caption">
-                      <h3>Domba</h3>
-                    </div>
-                  </div>
+            <div class="item">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/sispak.jpg" alt="Sistem Pakar" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Sistem Pakar</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-rounded" src="<?php echo base_url(); ?>assets/img/servis.jpg" alt="Servis Komputer" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Servis Komputer</h3>
+              </div>
+            </div>
                 </div>
 
               </div>
@@ -83,12 +82,12 @@
           <!-- Left-aligned media object -->
           <div class="media">
             <div class="media-left">
-              <img src="<?php echo base_url(); ?>assets/img/doctor.png" alt="doctor" class="media-object" style="width:60px">
+              <img src="<?php echo base_url(); ?>assets/img/teknisi.jpg" alt="doctor" class="media-object" style="width:60px">
             </div>
             <div class="media-body">
-              <h3 class="media-heading">Diagnosa Domba</h3>
-              <p>Sistem Pakar Diagnosa Penyakit Domba menggunakan Metode Backward Chaining berbasis WEB merupakan suatu sistem yang mendiagnosa penyakit melalui indikasi penyakit lalu muncul gejala yang dialami oleh Domba.
-                Dengan menggunakan sistem ini, peternak domba lebih gampang mengetahui penyakit yang dialami oleh hewan peliharannya tanpa harus menemui seorang Dokter dan Rumah Sakit</p>
+              <h3 class="media-heading">Diagnosa Kerusakan Hardware Komputer</h3>
+              <p>Sistem Pakar Diagnosa Kerusakan hardware komputer menggunakan Metode Forward Chaining berbasis WEB merupakan suatu sistem yang dapat mendiagnosa kerusakan hardware komuter berdasarkan gejala-gejala yang dialami komputer.
+                  Sistem ini bertujuan untuk membantu para pengguna komputer yang sering mnegalami kerusakan pada hardware komputer. Sistem ini dapat memudahkan pengguna komputer untuk menemukan kerusakan yang dialami komputer sehingga tidak perlu menemui orang servis komputer terlebih dahulu</p>
             </div>
           <br>
           </div>

@@ -10,6 +10,7 @@
   <meta name="author" content="">
 
   <title>S.P.K. Admin</title>
+  <link rel="icon" href="<?php echo base_url(); ?>assets/admin/img/logo_50.jpg">
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url(); ?>assets/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

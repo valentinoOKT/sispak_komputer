@@ -25,10 +25,10 @@
             </div><!-- /.info-box-content -->
         </div><!-- /.info-box -->
         <div>
-          <?php foreach ($penyakit as $p) {?>
+          <?php foreach ($kerusakan as $p) {?>
 
-            <a class="btn btn-block btn-social btn-linkedin" href="pertanyaan/<?php echo $p->id_penyakit; ?>">
-              <i class="fa fa-chevron-right"></i> <?php echo $p->nama_penyakit; ?>
+            <a class="btn btn-block btn-social btn-linkedin" href="pertanyaan/<?php echo $p->id_kerusakan; ?>">
+              <i class="fa fa-chevron-right"></i> <?php echo $p->nama_kerusakan; ?>
             </a>
 
           <?php } ?>

@@ -13,22 +13,22 @@ class Konsultasi_model extends CI_Model
     $this->load->database();
   }
 
-  public function daftar_penyakit(){
-    return $this->db->get('tb_penyakit')->result();
+  public function daftar_kerusakan(){
+    return $this->db->get('tb_kerusakan')->result();
   }
 
-  public function get_IdPenyakit($nama_penyakit){
+  public function get_Idkerusakan($nama_kerusakan){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
-    $this->db->where('nama_penyakit = ',$nama_penyakit);
+    $this->db->from('tb_kerusakan');
+    $this->db->where('nama_kerusakan = ',$nama_kerusakan);
     $query = $this->db->get();
     return $query;
   }
 
-  public function get_NamaPenyakit($id_penyakit){
+  public function get_Namakerusakan($id_kerusakan){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
-    $this->db->where('id_penyakit = ',$id_penyakit);
+    $this->db->from('tb_kerusakan');
+    $this->db->where('id_kerusakan = ',$id_kerusakan);
     $query = $this->db->get();
     return $query;
   }
@@ -40,9 +40,9 @@ class Konsultasi_model extends CI_Model
     return $query;
   }
 
-  public function get_penyakit(){
+  public function get_kerusakan(){
     $this->db->select('*');
-    $this->db->from('tb_penyakit');
+    $this->db->from('tb_kerusakan');
     $query = $this->db->get();
     return $query;
   }

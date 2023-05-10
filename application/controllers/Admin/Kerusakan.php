@@ -4,7 +4,7 @@
 /**
  *
  */
-class Rule extends CI_Controller
+class kerusakan extends CI_Controller
 {
 
   function __construct()
@@ -26,10 +26,10 @@ class Rule extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-    $data['rule'] = $this->Admin_model->getAll_rule()->result();
+    $data['kerusakan'] = $this->Admin_model->getAll_kerusakan()->result();
 
     $this->load->view('pages/admin/header');
-		$this->load->view('pages/admin/daftar_rule',$data);
+		$this->load->view('pages/admin/daftar_kerusakan',$data);
 		$this->load->view('pages/admin/footer');
 	}
 
@@ -40,7 +40,7 @@ class Rule extends CI_Controller
 		}
 
     $this->load->view('pages/admin/header');
-		$this->load->view('pages/admin/tambah_rule');
+		$this->load->view('pages/admin/tambah_kerusakan');
 		$this->load->view('pages/admin/footer');
 	}
 
@@ -50,25 +50,25 @@ class Rule extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-    $kode_rule = $this->input->post('kode_rule');
-    $kode_gejala = $this->input->post('kode_gejala');
     $kode_kerusakan = $this->input->post('kode_kerusakan');
+    $nama_kerusakan = $this->input->post('nama_kerusakan');
+    $penanganan = $this->input->post('penanganan');
 
 		$data = array(
-      'kode_rule' => $kode_rule,
-      'kode_gejala' => $kode_gejala,
-      'kode_kerusakan' => $kode_kerusakan
+      'kode_kerusakan' => $kode_kerusakan,
+			'nama_kerusakan' => $nama_kerusakan,
+			'penanganan' => $penanganan
     );
 
-		$cek_kode = $this->Admin_model->cek_kode_rule($kode_rule)->num_rows();
+		$cek_kode = $this->Admin_model->cek_kode($kode_kerusakan)->num_rows();
 		if ($cek_kode == 0) {
-		  $this->Admin_model->insert_rule($data);
-      redirect(base_url('admin/rule'));
+		  $this->Admin_model->insert_kerusakan($data);
+      redirect(base_url('admin/kerusakan'));
 		}
 		else {
 			$data['cek_kode'] = "ada";
 			$this->load->view('pages/admin/header');
-			$this->load->view('pages/admin/tambah_rule',$data);
+			$this->load->view('pages/admin/tambah_kerusakan',$data);
 			$this->load->view('pages/admin/footer');
 		}
   }
@@ -79,14 +79,14 @@ class Rule extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-		$id_rule = $this->uri->segment(4);
+		$id_kerusakan = $this->uri->segment(4);
 
-    $where = array('id_rule' => $id_rule, );
+    $where = array('id_kerusakan' => $id_kerusakan, );
 
-		$data['rule'] = $this->Admin_model->get_rule($where)->result();
+		$data['kerusakan'] = $this->Admin_model->get_kerusakan($where)->result();
 
 		$this->load->view('pages/admin/header');
-		$this->load->view('pages/admin/edit_rule',$data);
+		$this->load->view('pages/admin/edit_kerusakan',$data);
 		$this->load->view('pages/admin/footer');
 	}
 
@@ -96,35 +96,35 @@ class Rule extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-    $id_rule = $this->input->post('id_rule');
-    $now_kode_rule = $this->input->post('now_kode_rule');
+    $id_kerusakan = $this->input->post('id_kerusakan');
+    $now_kode_kerusakan = $this->input->post('now_kode_kerusakan');
 
-    $kode_rule = $this->input->post('kode_rule');
-    $kode_gejala = $this->input->post('kode_gejala');
     $kode_kerusakan = $this->input->post('kode_kerusakan');
+    $nama_kerusakan = $this->input->post('nama_kerusakan');
+    $penanganan = $this->input->post('penanganan');
 
 		$data = array(
-      'kode_rule' => $kode_rule,
-      'kode_gejala' => $kode_gejala,
-      'kode_kerusakan' => $kode_kerusakan
+      'kode_kerusakan' => $kode_kerusakan,
+			'nama_kerusakan' => $nama_kerusakan,
+			'penanganan' => $penanganan
     );
 
-		$cek_kode = $this->Admin_model->cek_kode_rule($kode_rule)->num_rows();
+		$cek_kode = $this->Admin_model->cek_kode($kode_kerusakan)->num_rows();
 		if ($cek_kode == 0) {
-		  $this->Admin_model->update_rule($data,$id_rule);
-      redirect(base_url('admin/rule'));
+		  $this->Admin_model->update_kerusakan($data,$id_kerusakan);
+      redirect(base_url('admin/kerusakan'));
 		}
 		else {
-			if ($kode_rule == $now_kode_rule) {
-        $this->Admin_model->update_rule($data,$id_rule);
-        redirect(base_url('admin/rule'));
+			if ($kode_kerusakan == $now_kode_kerusakan) {
+        $this->Admin_model->update_kerusakan($data,$id_kerusakan);
+        redirect(base_url('admin/kerusakan'));
       }else {
         $data['cek_kode'] = "ada";
-        $where = array('id_rule' => $id_rule );
+        $where = array('id_kerusakan' => $id_kerusakan );
 
-    		$data['rule'] = $this->Admin_model->get_rule($where)->result();
+    		$data['kerusakan'] = $this->Admin_model->get_kerusakan($where)->result();
   			$this->load->view('pages/admin/header');
-  			$this->load->view('pages/admin/edit_rule',$data);
+  			$this->load->view('pages/admin/edit_kerusakan',$data);
   			$this->load->view('pages/admin/footer');
       }
 		}
@@ -136,11 +136,11 @@ class Rule extends CI_Controller
 			redirect(base_url('admin/login'));
 		}
 
-		$id_rule = $this->uri->segment(4);
+		$id_kerusakan = $this->uri->segment(4);
 
-		$this->Admin_model->delete_rule($id_rule);
+		$this->Admin_model->delete_kerusakan($id_kerusakan);
 
-		redirect(base_url('admin/rule'));
+		redirect(base_url('admin/kerusakan'));
 	}
 
 }

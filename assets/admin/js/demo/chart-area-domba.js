@@ -35,7 +35,7 @@ async function foo() {
 
 async function load() {
   var result = await foo();
-  var penyakit = result.penyakit;
+  var kerusakan = result.kerusakan;
   var gejala = result.gejala;
   var rule = result.rule;
 
@@ -44,7 +44,7 @@ async function load() {
   var myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["Penyakit", "Gejala", "Rule"],
+      labels: ["kerusakan", "Gejala", "Rule"],
       datasets: [{
         label: "Jumlah",
         lineTension: 0.3,
@@ -58,7 +58,7 @@ async function load() {
         pointHoverBorderColor: "rgba(78, 115, 223, 1)",
         pointHitRadius: 10,
         pointBorderWidth: 2,
-        data: [penyakit, gejala, rule],
+        data: [kerusakan, gejala, rule],
       }],
     },
     options: {

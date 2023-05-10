@@ -2,7 +2,7 @@
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Edit Penyakit</h1>
+  <h1 class="h3 mb-2 text-gray-800">Edit kerusakan</h1>
 
   <style>
     * {
@@ -78,7 +78,7 @@
   </style>
 
   <div class="container">
-    <form action="<?php echo base_url(); ?>admin/penyakit/proses_edit" method="post">
+    <form action="<?php echo base_url(); ?>admin/kerusakan/proses_edit" method="post">
       <?php
       if (isset($cek_kode)) {
       ?>
@@ -86,48 +86,32 @@
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
          <span aria-hidden="true">&times;</span>
         </button>
-        Kode <strong><?php echo $kode_penyakit; ?></strong> telah terdaftar
+        Kode <strong><?php echo $kode_kerusakan; ?></strong> telah terdaftar
       </div>
       <?php
       }
       ?>
       <?php
-      if (isset($penyakit)) {
-        foreach ($penyakit as $data) {
+      if (isset($kerusakan)) {
+        foreach ($kerusakan as $data) {
       ?>
 
       <div class="row">
         <div class="col-25">
-          <label for="kode_penyakit">Kode Penyakit</label>
+          <label for="kode_kerusakan">Kode kerusakan</label>
         </div>
         <div class="col-75">
-          <input type="hidden" name="id_penyakit" required value="<?php echo $data->id_penyakit; ?>">
-          <input type="hidden" name="now_kode_penyakit" required value="<?php echo $data->kode_penyakit; ?>">
-          <input type="text" name="kode_penyakit" placeholder="Kode Penyakit" required value="<?php echo $data->kode_penyakit; ?>">
+          <input type="hidden" name="id_kerusakan" required value="<?php echo $data->id_kerusakan; ?>">
+          <input type="hidden" name="now_kode_kerusakan" required value="<?php echo $data->kode_kerusakan; ?>">
+          <input type="text" name="kode_kerusakan" placeholder="Kode kerusakan" required value="<?php echo $data->kode_kerusakan; ?>">
         </div>
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="nama_penyakit">Nama Penyakit</label>
+          <label for="nama_kerusakan">Nama kerusakan</label>
         </div>
         <div class="col-75">
-          <input type="text" name="nama_penyakit" placeholder="Nama Penyakit" required value="<?php echo $data->nama_penyakit; ?>">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="penjelasan">Penjelasan</label>
-        </div>
-        <div class="col-75">
-          <textarea name="penjelasan" placeholder="Penjelasan" style="height:200px"><?php echo $data->penjelasan; ?></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="gejala">Gejala</label>
-        </div>
-        <div class="col-75">
-          <textarea name="gejala" placeholder="Gejala" style="height:200px"><?php echo $data->gejala; ?></textarea>
+          <input type="text" name="nama_kerusakan" placeholder="Nama kerusakan" required value="<?php echo $data->nama_kerusakan; ?>">
         </div>
       </div>
       <div class="row">

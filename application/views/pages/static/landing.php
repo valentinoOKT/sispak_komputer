@@ -9,7 +9,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>S. E. S.</title>
+    <title>S. P. K.</title>
     <!-- google-fonts -->
     <link
         href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap"
@@ -27,7 +27,7 @@ Author URL: http://w3layouts.com
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg stroke">
                 <h1>
-                    <a class="navbar-brand d-flex align-items-center" href="<?php echo base_url(); ?>landing">S. E. S.</a>
+                    <a class="navbar-brand d-flex align-items-center" href="<?php echo base_url(); ?>landing">S. P. K.</a>
                 </h1>
                 <!-- if logo is image enable this
     <a class="navbar-brand" href="#index.html">
@@ -95,14 +95,14 @@ Author URL: http://w3layouts.com
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6 pt-md-0 pt-4">
                         <h3 class="mb-sm-4 mb-3 title">Kami adalah <span class="d-block-res">S<span class="type-js"><span
-                                        class="text-js">.E.S.</span></span></span></h3>
-                        <p>Sebuah website sistem pakar yang membantu anda mendiagnosa penyakit domba.</p>
+                                        class="text-js">.P.K.</span></span></span></h3>
+                        <p>Sebuah website sistem pakar yang membantu anda dalam mendiagnosa kerusakan pada hardware komputer anda.</p>
                         <div class="mt-md-5 mt-4 mb-lg-0 mb-4">
                             <a class="btn btn-style" href="<?php echo base_url(); ?>home">Lihat Sekarang</a>
                         </div>
                     </div>
                     <div class="col-md-6 banner-right mt-lg-4 mt-0 text-right offset-lg-1">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system_500x500.jpg" alt=" ">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system1_500x500.jpg" alt=" ">
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@ Author URL: http://w3layouts.com
                         </div>
                         <div class="about-content">
                             <h5 class="mb-3">Who we are</h5>
-                            <p>Pengembang website sistem pakar diagnosa penyakit domba dengan metode forward chaining dan berbasis framework CI3.</p>
+                            <p>Pengembang website sistem pakar diagnosa kerusakan hardware komputer dengan metode forward chaining.</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ Author URL: http://w3layouts.com
                         </div>
                         <div class="about-content">
                             <h5 class="mb-3">How we Work</h5>
-                            <p>Kami bekerja sama dengan pakar, yaitu seorang dokter hewan yang ahli mengenai penyakit domba sebagai sumber data kami.</p>
+                            <p>Kami bekerja sama dengan pakar, yaitu seorang dokter hewan yang ahli mengenai kerusakan hardware komputer sebagai sumber data kami.</p>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ Author URL: http://w3layouts.com
                         </div>
                         <div class="about-content">
                             <h5 class="mb-3">What we do</h5>
-                            <p>Memberikan layanan diagnosa penyakit domba untuk memudahkan pengguna dalam merawat domba yang terserang penyakit.</p>
+                            <p>Memberikan layanan diagnosa kerusakan hardware komputer untuk memudahkan pengguna dalam mendiagnosa kerusakan yang terjadi pada hardware komputer anda.</p>
                         </div>
                     </div>
                 </div>
@@ -151,25 +151,6 @@ Author URL: http://w3layouts.com
         </div>
     </section>
     <!-- //banner bottom section -->
-
-    <!-- about section -->
-    <section class="w3l-aboutblock pt-4 pb-5">
-        <div class="container pb-md-5 pb-sm-4">
-            <div class="row">
-                <div class="col-lg-6 left-wthree-img mt-lg-0 mt-5 order-lg-first order-last">
-                    <img class="img-fluid img-responsive" src="<?php echo base_url(); ?>assets/img/doktorpandu-copy.jpeg" alt="doktorpandu">
-                </div>
-                <div class="col-lg-6 about-right-faq align-self pl-lg-5 mt-xl-4 order-lg-last order-first">
-                    <h3 class="text-bgs mb-md-3 mb-2">Pakar <span>Terpercaya</span></h3>
-                    <h3 class="title-style"><span>drh.</span> Pandu Tokoh Amukti</h3>
-                    <p class="ab-text mt-4 pt-lg-2">"Memelihara domba adalah hal yang gampang-gampang-susah sekaligus susah-susah-gampang, dengan adanya aplikasi ini semakin memudahkan para pelaku usaha peternakan domba lebih open minded terhadap kesehatan ternak. Semoga bermanfaat."</p>
-                    <p class="mt-4">Seorang dokter hewan yang beralamat di Perumahan Tamansari Indah Jl. Cendana 7 RT 15/06, Tamansari, Bondowoso. Saat ini bekerja sebagai dokter hewan di Puskesmas Hewan Tamanan, Bondowoso.</p>
-                    <img class="img-fluid mt-md-5 mt-4 img-dark-color" src="<?php echo base_url(); ?>assets/img/sign.png" alt=" ">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //about section -->
 
     <!-- services section -->
     <section class="w3l-bottom-grids-6 service-w3l-bg py-5" id="services">
@@ -181,21 +162,21 @@ Author URL: http://w3layouts.com
             <div class="row pt-md-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 grids-feature">
                     <div class="area-box">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sheep_doctor_160x160.jpg" alt=" ">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/servis_160.jpg" alt=" ">
                         <h4><a href="#feature" class="title-head">Diagnosa Mudah</a></h4>
                         <p>Hanya dengan menjawab pertanyaan-pertanyaan yang ada, anda bisa mendapatkan hasil diagnosa yang akurat.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-sm-5 mt-4">
                     <div class="area-box">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sheep_160x160.jpg" alt=" ">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/komputer_160.jpg" alt=" ">
                         <h4><a href="#feature" class="title-head">Cetak Hasil</a></h4>
-                        <p>Anda dapat mencetak hasil diagnosa yang muncul untuk memudahkan anda dalam merawat domba nantinya.</p>
+                        <p>Anda dapat mencetak hasil diagnosa yang muncul untuk memudahkan anda dalam merawat hardware komputer anda nantinya.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-sm-5 mt-4">
                     <div class="area-box">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system_160x160.jpg" alt=" ">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sispak_160.jpg" alt=" ">
                         <h4><a href="#feature" class="title-head">Tips Perawatan</a></h4>
                         <p>Terdapat berbagai tips perawatan domba yang bisa anda lihat pada website ini.</p>
                     </div>
@@ -212,9 +193,9 @@ Author URL: http://w3layouts.com
                 <div class="row footer-top-29">
                     <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
                         <div class="footer-logo mb-3">
-                            <a class="footer-brand-logo" href="<?php echo base_url(); ?>landing"><img src="<?php echo base_url(); ?>assets/img/ses_160x47.png" alt="logo"></a>
+                            <a class="footer-brand-logo" href="<?php echo base_url(); ?>landing"><img src="<?php echo base_url(); ?>assets/img/spk_160.png" alt="logo"></a>
                         </div>
-                        <p>Website sistem pakar untuk membantu mendiagnosis penyakit domba.</p>
+                        <p>Website sistem pakar untuk membantu mendiagnosis kerusakan hardware komputer.</p>
                         <!--div class="main-social-footer-29 mt-4">
                             <a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
                             <a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a>
@@ -235,7 +216,7 @@ Author URL: http://w3layouts.com
         <div class="w3l-copyright">
             <div class="container">
                 <div class="row bottom-copies align-items-center">
-                    <p class="col-lg-8 copy-footer-29">@ 2021 Wahyu Rama. All rights reserved.</p>
+                    <p class="col-lg-8 copy-footer-29">@ 2023 Valentino Oktawan. All rights reserved.</p>
                     <div class="col-lg-4 footer-list-29 footer-copy-list">
                         <ul class="text-lg-right">
                         </ul>
