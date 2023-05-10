@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Bulan Mei 2023 pada 11.35
+-- Waktu pembuatan: 10 Bulan Mei 2023 pada 04.23
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
@@ -48,7 +48,10 @@ INSERT INTO `riwayat_jawaban` (`id_jawaban`, `waktu`, `jawaban`) VALUES
 (90, '2023-05-03 10:36:29', 'G1 G3 G4 G5'),
 (91, '2023-05-03 10:39:35', 'G1 G3 G4 G5'),
 (92, '2023-05-05 15:53:40', 'G1 G3 G4 G5'),
-(93, '2023-05-09 13:54:22', 'G1 G3 G4 G5');
+(93, '2023-05-09 13:54:22', 'G1 G3 G4 G5'),
+(94, '2023-05-10 08:05:57', 'G1 G3 G4 G5'),
+(95, '2023-05-10 08:51:30', 'G1 G3 G4 G5'),
+(96, '2023-05-10 09:07:56', 'G1 G2 G3 G4 G5');
 
 -- --------------------------------------------------------
 
@@ -232,7 +235,7 @@ ALTER TABLE `tb_rule`
 -- AUTO_INCREMENT untuk tabel `riwayat_jawaban`
 --
 ALTER TABLE `riwayat_jawaban`
-  MODIFY `id_jawaban` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id_jawaban` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_admin`
@@ -244,19 +247,19 @@ ALTER TABLE `tb_admin`
 -- AUTO_INCREMENT untuk tabel `tb_gejala`
 --
 ALTER TABLE `tb_gejala`
-  MODIFY `id_gejala` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id_gejala` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_kerusakan`
 --
 ALTER TABLE `tb_kerusakan`
-  MODIFY `id_kerusakan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_kerusakan` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_rule`
 --
 ALTER TABLE `tb_rule`
-  MODIFY `id_rule` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_rule` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
