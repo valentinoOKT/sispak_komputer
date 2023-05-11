@@ -38,7 +38,7 @@
                 <span class="info-box-icon bg-blue"><i class="fa fa-star"></i></span>
                 <div class="info-box-content">
                   <h4>Hasil diagnosa :</h4>
-                  Komputer kemungkinan <mark>mengalami</mark> kerusakan <b><?php
+                  Komputer kemungkinan <mark>mengalami</mark><b><?php
                   foreach ($kerusakan as $key) {
                     echo $key->nama_kerusakan;
                   }
@@ -59,7 +59,7 @@
                 <div class="info-box-content">
                   <h4>Hasil diagnosa :</h4>
                   <span class="progress-description">
-                    Domba sepertinya <mark>tidak terkena</mark> kerusakan <b><?php
+                    komputer sepertinya <mark>tidak terkena</mark> kerusakan <b><?php
                     foreach ($kerusakan as $key) {
                       echo $key->nama_kerusakan;
                     }

@@ -57,8 +57,8 @@
 <script src="<?php echo base_url(); ?>assets/admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="<?php echo base_url(); ?>assets/admin/js/demo/chart-area-domba.js"></script>
-<script src="<?php echo base_url(); ?>assets/admin/js/demo/chart-pie-domba.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/js/demo/chart-area-komputer.js"></script>
+<script src="<?php echo base_url(); ?>assets/admin/js/demo/chart-pie-komputer.js"></script>
 <script src="<?php echo base_url(); ?>assets/admin/js/demo/datatables-demo.js"></script>
 
 <script type="text/javascript">

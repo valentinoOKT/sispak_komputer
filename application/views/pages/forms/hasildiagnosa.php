@@ -68,7 +68,7 @@
                   <span class="info-box-icon bg-yellow"><i class="fa fa-warning"></i></span>
                   <div class="info-box-content">
                     <h4>Hasil diagnosa :</h4>
-                    Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark> kerusakan <b><?php echo $golkerusakan; ?></b>
+                    Komputer kemungkinan <mark style="background: #e9dbc9;">mengalami</mark><b><?php echo $golkerusakan; ?></b>
                   </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
 

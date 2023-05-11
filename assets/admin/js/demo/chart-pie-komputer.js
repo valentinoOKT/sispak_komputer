@@ -11,7 +11,7 @@ async function foo() {
 
 async function load() {
   var result = await foo();
-  var penyakit = result.penyakit;
+  var kerusakan = result.kerusakan;
   var gejala = result.gejala;
   var rule = result.rule;
 
@@ -20,9 +20,9 @@ async function load() {
   var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ["Penyakit", "Gejala", "Rule"],
+      labels: ["kerusakan", "Gejala", "Rule"],
       datasets: [{
-        data: [penyakit, gejala, rule],
+        data: [kerusakan, gejala, rule],
         backgroundColor: ['#4e73df', '#1cc88a', '#e74a3b'],
         hoverBackgroundColor: ['#3254b6', '#17a673', '#be2617'],
         hoverBorderColor: "rgba(234, 236, 244, 1)",

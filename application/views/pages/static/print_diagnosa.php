@@ -77,7 +77,7 @@
           }
           ?>
           <h2>Hasil diagnosa :</h2>
-          Domba kemungkinan terkena kerusakan <b><?php echo $golkerusakan; ?></b>
+          komputer kemungkinan terkena kerusakan <b><?php echo $golkerusakan; ?></b>
           <br>
           <h3>Penanganan</h3>
           <?php echo $golpenanganankerusakan; ?>

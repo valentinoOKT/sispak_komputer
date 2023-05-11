@@ -178,7 +178,7 @@ Author URL: http://w3layouts.com
                     <div class="area-box">
                         <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/sispak_160.jpg" alt=" ">
                         <h4><a href="#feature" class="title-head">Tips Perawatan</a></h4>
-                        <p>Terdapat berbagai tips perawatan domba yang bisa anda lihat pada website ini.</p>
+                        <p>Terdapat berbagai tips perawatan komputer yang bisa anda lihat pada website ini.</p>
                     </div>
                 </div>
             </div>

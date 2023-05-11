@@ -72,7 +72,7 @@
         <li class="header">Navigasi Utama</li>
         <li >
           <a href="<?php echo base_url(); ?>home">
-            <i class="fa fa-medkit"></i>
+            <i class="fa fa-home"></i>
             <span>Home</span>
           </a>
         </li>
