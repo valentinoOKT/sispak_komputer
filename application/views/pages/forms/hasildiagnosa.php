@@ -25,11 +25,11 @@
     $exketentuan = explode(" ",$ketentuan);
     if ($exketentuan==$ar_jawab) {
       $golrule = explode(" ",$ketentuan);
-      foreach ($kerusakan as $p) {
-        if ($r->kode_kerusakan==$p->kode_kerusakan) {
-          $golkerusakan = $p->nama_kerusakan;
-          $golidkerusakan = $p->id_kerusakan;
-          $golpenanganankerusakan = $p->penanganan;
+      foreach ($kerusakan as $k) {
+        if ($r->kode_kerusakan==$k->kode_kerusakan) {
+          $golkerusakan = $k->nama_kerusakan;
+          $golidkerusakan = $k->id_kerusakan;
+          $golpenanganankerusakan = $k->penanganan;
         }
       }
     }
@@ -107,11 +107,11 @@
                       $most_similar_kerusakan = $rul->kode_kerusakan;
                     }
                   }
-                  foreach ($kerusakan as $p) {
-                    if ($p->kode_kerusakan == $most_similar_kerusakan) {
-                      $golkerusakan = $p->nama_kerusakan;
-                      $golidkerusakan = $p->id_kerusakan;
-                      $golpenanganankerusakan = $p->penanganan;
+                  foreach ($kerusakan as $k) {
+                    if ($k->kode_kerusakan == $most_similar_kerusakan) {
+                      $golkerusakan = $k->nama_kerusakan;
+                      $golidkerusakan = $k->id_kerusakan;
+                      $golpenanganankerusakan = $k->penanganan;
                     }
                   }
                   ?>

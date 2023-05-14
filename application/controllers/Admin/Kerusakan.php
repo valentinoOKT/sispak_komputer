@@ -55,10 +55,10 @@ class kerusakan extends CI_Controller
     $penanganan = $this->input->post('penanganan');
 
 		$data = array(
-      'kode_kerusakan' => $kode_kerusakan,
+      		'kode_kerusakan' => $kode_kerusakan,
 			'nama_kerusakan' => $nama_kerusakan,
 			'penanganan' => $penanganan
-    );
+    	);
 
 		$cek_kode = $this->Admin_model->cek_kode($kode_kerusakan)->num_rows();
 		if ($cek_kode == 0) {
