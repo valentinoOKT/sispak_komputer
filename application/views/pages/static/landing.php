@@ -46,6 +46,9 @@ Author URL: http://w3layouts.com
                             <a class="nav-link" href="<?php echo base_url(); ?>home">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url(); ?>konsultasi">Konsultasi</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url(); ?>tips">Tips Perawatan</a>
                         </li>
                         <li class="nav-item">
@@ -205,6 +208,7 @@ Author URL: http://w3layouts.com
                         <ul>
                             <h6 class="footer-title-29">Usefull Links</h6>
                             <li><a href="<?php echo base_url(); ?>home">Home</a></li>
+                            <li><a href="<?php echo base_url(); ?>konsultasi">Konsultasi</a></li>
                             <li><a href="<?php echo base_url(); ?>tips">Tips Perawatan</a></li>
                             <li><a href="<?php echo base_url(); ?>tentang">Tentang</a></li>
                         </ul>
