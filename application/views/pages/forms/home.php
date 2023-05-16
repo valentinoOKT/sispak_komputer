@@ -36,9 +36,6 @@
                                             class="text-js">.P.K</span></span></span></h3>
                             <p>Sebuah website sistem pakar yang membantu anda mendiagnosa kerusakan pada hardware komputer anda.</p>
                         </div>
-                        <div class="col-md-6 banner-right mt-lg-4 mt-0 text-right offset-lg-1">
-                            <img class="img-fluid" src="<?php echo base_url(); ?>assets/img/expert_system1_500x500.jpg" alt=" ">
-                        </div>
                     </div>
                 </div>
             </div>

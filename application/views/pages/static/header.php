@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>S.P.K</title>
-  <link rel="icon" href="assets/img/logo_50.jpg">
+  <link rel="icon" href="assets/img/logo_501.png">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -46,7 +46,7 @@
     <!-- Logo -->
     <a href="<?php echo base_url(); ?>home" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><img class="img-rounded" src="<?php echo base_url(); ?>assets/img/logo_50.png" alt="icon"></span>
+      <span class="logo-mini"><img class="img-rounded" src="<?php echo base_url(); ?>assets/img/logo_501.png" alt="icon"></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><img src="<?php echo base_url(); ?>assets/img/SPK_160.png" alt="logo"></span>
     </a>
