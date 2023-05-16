@@ -68,7 +68,7 @@
               $most_similar_kerusakan = $rul->kode_kerusakan;
             }
           }
-          foreach ($kerusakan as $k {
+          foreach ($kerusakan as $k) {
             if ($k->kode_kerusakan == $most_similar_kerusakan) {
               $golkerusakan = $k->nama_kerusakan;
               $golidkerusakan = $k->id_kerusakan;
