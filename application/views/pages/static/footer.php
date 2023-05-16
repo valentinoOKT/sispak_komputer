@@ -4,8 +4,7 @@
   <div class="pull-right hidden-xs">
     <b>Sistem Pakar - </b>Kerusakan Hardware Komputer
   </div>
-  <strong>Copyright &copy; 2023 Valentino Oktawan.</strong> All rights
-  reserved.
+  <strong>Copyright &copy; 2023 Valentino Oktawan.</strong>
 </footer>
 
 <!-- End Wrapper-->
