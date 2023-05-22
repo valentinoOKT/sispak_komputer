@@ -116,10 +116,10 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="kode_penyakit">Kode Penyakit</label>
+          <label for="kode_kerusakan">Kode kerusakan</label>
         </div>
         <div class="col-75">
-          <input type="text" name="kode_penyakit" placeholder="ex: P1" required value="<?php echo $data->kode_penyakit; ?>">
+          <input type="text" name="kode_kerusakan" placeholder="ex: P1" required value="<?php echo $data->kode_kerusakan; ?>">
         </div>
       </div>
       <br>
