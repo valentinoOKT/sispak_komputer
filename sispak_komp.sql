@@ -3,11 +3,12 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Bulan Mei 2023 pada 04.23
+-- Waktu pembuatan: 25 Bulan Mei 2023 pada 08.55
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -50,7 +51,26 @@ INSERT INTO `riwayat_jawaban` (`id_jawaban`, `waktu`, `jawaban`) VALUES
 (93, '2023-05-09 13:54:22', 'G1 G3 G4 G5'),
 (94, '2023-05-10 08:05:57', 'G1 G3 G4 G5'),
 (95, '2023-05-10 08:51:30', 'G1 G3 G4 G5'),
-(96, '2023-05-10 09:07:56', 'G1 G2 G3 G4 G5');
+(96, '2023-05-10 09:07:56', 'G1 G2 G3 G4 G5'),
+(97, '2023-05-10 15:28:00', 'G5 G23'),
+(98, '2023-05-10 15:29:38', 'G16 G17'),
+(99, '2023-05-10 15:38:38', 'G1 G2'),
+(100, '2023-05-10 15:39:11', ''),
+(101, '2023-05-10 15:39:48', 'G1'),
+(102, '2023-05-10 15:42:03', 'G2'),
+(103, '2023-05-11 15:28:55', 'G1 G3 G4 G5'),
+(104, '2023-05-11 15:40:34', 'G1 G3 G4 G5'),
+(105, '2023-05-11 15:45:28', 'G11 G15'),
+(106, '2023-05-14 17:17:26', 'G1 G3 G4 G5'),
+(107, '2023-05-14 17:18:27', 'G1 G2 G26'),
+(108, '2023-05-14 17:19:24', 'G3 G4 G5 G11 G12 G30'),
+(109, '2023-05-15 13:26:07', 'G1 G3 G4 G5'),
+(110, '2023-05-15 16:57:14', 'G1 G3 G4 G5'),
+(111, '2023-05-16 13:10:17', 'G1 G3 G4 G5 G6 G7'),
+(112, '2023-05-16 13:10:56', 'G1 G3 G4 G5'),
+(113, '2023-05-16 13:11:40', 'G1 G2 G26'),
+(114, '2023-05-16 17:37:15', 'G1 G3 G4 G5'),
+(115, '2023-05-18 10:23:34', 'G1 G3 G4 G5');
 
 -- --------------------------------------------------------
 
@@ -138,23 +158,23 @@ CREATE TABLE `tb_kerusakan` (
 --
 
 INSERT INTO `tb_kerusakan` (`id_kerusakan`, `kode_kerusakan`, `nama_kerusakan`, `penanganan`) VALUES
-(1, 'K1', 'Monitor', 'Terdapat kerusakan pada monitor komputer. Periksa refresh rate vertikal monitor Anda. Pertama klik tombol Start - kemudian klik Run - Lalu Ketikkan control kemudian klik tombol OK. Carilah ikon berlabel Display dan klik dua kali. Pada jendela Display Properties klik tab Settings - Kemudian Klik tombol Advanced dan kemudian klik tab monitor. Di bawah bagian Monitor settings Anda akan melihat menu dropdown berlabel Screen refresh rate, dan pastikan bahwa refresh rate layar 75Hz atau lebih. Jika sudah silahkan merestart ulang komputer agar pengaturan baru ini bisa bekerja. Langkah kedua bisa dengan memperbarui Driver VGA Card. Langkah terakhir apabila masih belum bisa juga adalah melakukan service monitor di tempat service. Monitor dapat dibawa ke tempat servis monitor untuk ditangani ahli monitor.'),
-(2, 'K2', 'Memori', 'Periksalah kembali RAM yang terpasang dengan kapasitas memori yang terbaca oleh komputer sebab ada \r\nkalanya ketika memasang beberapa keping RAM tetapi yang terbaca hanya satu keping saja. Beberapa RAM yang digunakan tetapi tidak identik (sama tipe dan kapasitasnya) bukannya malah mempercepat komputer tetapi malah memperlambat dan membuat hang komputer. Jika masih tidak bisa, buka cover CPU lalu cabut RAM. Coba bersihkan bagian kaki RAM (pin) dengan penghapus dan pasang RAM kembali pada tempatnya dan nyalakan kembali Komputer. jika belum bisa, pindahkan RAM di slot lain. Jika masih belum bisa juga, maka RAM perlu diganti atau cek di komputer lain'),
-(3, 'K3', 'HDD', 'Lakukan pengecekan kondisi kabel IDE atau SATA pada Hardisk - pastikan sudah terpasang dengan benar. Untuk 2 hardisk IDE yang terpasang pada 1 kabel cek posisi jumper untuk setingan Master dan Slavenya supaya jangan tertukar. Cek apakah Hardisk sudah terdeteksi oleh BIOS atau belum. Coba di-detect satu persatu. Kalau BIOS tidak bisa mendeteksi berarti masalahnya ada pada hardisk tersebut. Coba pegang permukaan hardisk. Untuk hardisk yang hidup akan terasa getarannya.'),
-(4, 'K4', 'VGA ', 'Coba lepas dulu VGA Card/kaki VGA Card atau pin-nya dibersihkan dan dipasangkan kembali dengan benar. Jika belum bisa maka coba ganti VGA Card dengan yang lain dulu atau cek di komputer lain'),
-(5, 'K5', 'Sound card', 'Kalau komputer anda menggunakan sound card on board maka yang harus anda perbaiki adalah motherboarnya. Kalau sound card anda jenis add on,  silahkan anda copot suond card dari slotnya. Bersihkan dari debu-debu yang menempel. Kemudian bersihkan juga kaki-kaki sound card.'),
-(6, 'K6', 'Power supply', 'Hubungkan kabel power ke Power Supply dengan benar dan jangan sampai longgar.'),
-(7, 'K7', 'Prosessor', 'Cek kondisi Heatsink dan fan Processor. Apakah fan masih bisa berputar atau kotor atau bahkan ada kerusakan sehingga fan terlepas dari dudukannya. Bersihkan fan atau heatsink apabila kotor. Kalau komputer masih bisa masuk ke BIOS maka temperatur processor ini bisa dilihat pada bagian Hardware Monitor. '),
-(8, 'K8', 'Memori kurang', 'Upgrade memory card anda menjadi yang lebih baik'),
-(9, 'K9', 'Memori VGA kurang', 'Upgrade memory VGA anda menjadi yang lebih baik'),
-(10, 'K10', 'Clock prosessor kurang', 'Perlu mengganti processor menjadi lebih baik lagi'),
+(1, 'K1', 'Kerusakan pada Monitor', 'Terdapat kerusakan pada monitor komputer. Periksa refresh rate vertikal monitor Anda. Pertama klik tombol Start - kemudian klik Run - Lalu Ketikkan control kemudian klik tombol OK. Carilah ikon berlabel Display dan klik dua kali. Pada jendela Display Properties klik tab Settings - Kemudian Klik tombol Advanced dan kemudian klik tab monitor. Di bawah bagian Monitor settings Anda akan melihat menu dropdown berlabel Screen refresh rate, dan pastikan bahwa refresh rate layar 75Hz atau lebih. Jika sudah silahkan merestart ulang komputer agar pengaturan baru ini bisa bekerja. Langkah kedua bisa dengan memperbarui Driver VGA Card. Langkah terakhir apabila masih belum bisa juga adalah melakukan service monitor di tempat service. Monitor dapat dibawa ke tempat servis monitor untuk ditangani ahli monitor.'),
+(2, 'K2', 'Kerusakan pada Memori', 'Periksalah kembali RAM yang terpasang dengan kapasitas memori yang terbaca oleh komputer sebab ada \r\nkalanya ketika memasang beberapa keping RAM tetapi yang terbaca hanya satu keping saja. Beberapa RAM yang digunakan tetapi tidak identik (sama tipe dan kapasitasnya) bukannya malah mempercepat komputer tetapi malah memperlambat dan membuat hang komputer. Jika masih tidak bisa, buka cover CPU lalu cabut RAM. Coba bersihkan bagian kaki RAM (pin) dengan penghapus dan pasang RAM kembali pada tempatnya dan nyalakan kembali Komputer. jika belum bisa, pindahkan RAM di slot lain. Jika masih belum bisa juga, maka RAM perlu diganti atau cek di komputer lain'),
+(3, 'K3', 'Kerusakan pada HDD', 'Lakukan pengecekan kondisi kabel IDE atau SATA pada Hardisk - pastikan sudah terpasang dengan benar. Untuk 2 hardisk IDE yang terpasang pada 1 kabel cek posisi jumper untuk setingan Master dan Slavenya supaya jangan tertukar. Cek apakah Hardisk sudah terdeteksi oleh BIOS atau belum. Coba di-detect satu persatu. Kalau BIOS tidak bisa mendeteksi berarti masalahnya ada pada hardisk tersebut. Coba pegang permukaan hardisk. Untuk hardisk yang hidup akan terasa getarannya.'),
+(4, 'K4', 'Kerusakan pada VGA ', 'Coba lepas dulu VGA Card/kaki VGA Card atau pin-nya dibersihkan dan dipasangkan kembali dengan benar. Jika belum bisa maka coba ganti VGA Card dengan yang lain dulu atau cek di komputer lain'),
+(5, 'K5', 'Kerusakan pada Sound card', 'Kalau komputer anda menggunakan sound card on board maka yang harus anda perbaiki adalah motherboarnya. Kalau sound card anda jenis add on,  silahkan anda copot suond card dari slotnya. Bersihkan dari debu-debu yang menempel. Kemudian bersihkan juga kaki-kaki sound card.'),
+(6, 'K6', 'Kerusakan pada Power supply', 'Hubungkan kabel power ke Power Supply dengan benar dan jangan sampai longgar. Jika masih tidak berfungsi, segera ganti power supply anda.'),
+(7, 'K7', 'Kerusakan pada Prosessor', 'Cek kondisi Heatsink dan fan Processor. Apakah fan masih bisa berputar atau kotor atau bahkan ada kerusakan sehingga fan terlepas dari dudukannya. Bersihkan fan atau heatsink apabila kotor. Kalau komputer masih bisa masuk ke BIOS maka temperatur processor ini bisa dilihat pada bagian Hardware Monitor. '),
+(8, 'K8', 'Kekurangan Memori', 'Upgrade memory card anda menjadi yang lebih baik'),
+(9, 'K9', 'Kekurangan Memori VGA', 'Upgrade memori VGA anda menjadi yang lebih baik'),
+(10, 'K10', 'Kekurangan Clock prosessor', 'Perlu mengganti processor menjadi lebih baik lagi'),
 (11, 'K11', 'Permasalahan pada BIOS', 'Periksa kabel IDE apakah sudah dipasang dengan benar dan juga periksa apakah device tersebut sudah diaktifkan dengan benar tau belum. Jika belum diaktikan, perlu diaktifkan  melalui sistem. Jika masih belum bisa, coba bawa ketempat servis komputer untuk mengganti kabel IDE.'),
-(12, 'K12', 'Power supply kekurangan daya', 'Gunakan stabilizer atau UPS untuk menstabilkan tegangan listrik. Periksa semua koneksi kabel power supply. Terdapat beberapa kabel koneksi yang berasal dari power supply dan memiliki fungsi yang berbeda-beda. Pastikan semua kabel terpasang dengan benar dan tidak ada yang longgar. Hal ini dilakukan untuk memastikan pasokan daya listrik bekerja secara optimal. Apabila semua kabel sudah terpasang dengan benar dan masih mati total maka perlu diganti dengan yang baru. Jika masih kekurangan daya, silahkan anda coba menganti power supply.'),
-(13, 'K13', 'Perangkat USB rusak', 'CPU perlu dibawa ke tempat service untuk ditindaklanjuti lebih jauh.'),
-(14, 'K14', 'Keyboard rusak', 'Bersihkan keyboard dari debu, kemudian coba update driver keyboard. Jika masih rusak, silahkan ganti keyboard anda.'),
-(15, 'K15', 'Mouse rusak', 'Coba update driver mouse. Jika masih rusak, silahkan ganti mouse anda.'),
-(16, 'K16', 'Motherboard rusak', 'Perlu diganti dengan motherboard yang baru dan sama seperti tipe sebelumnya atau bisa juga dengan membawa langsung ke tempat produsen komputer tersebut.'),
-(17, 'K17', 'OS bermasalah', 'Lakukan install ulang Windows atau repair Windows');
+(12, 'K12', 'Kekurangan Daya pada Power supply', 'Gunakan stabilizer atau UPS untuk menstabilkan tegangan listrik. Periksa semua koneksi kabel power supply. Terdapat beberapa kabel koneksi yang berasal dari power supply dan memiliki fungsi yang berbeda-beda. Pastikan semua kabel terpasang dengan benar dan tidak ada yang longgar. Hal ini dilakukan untuk memastikan pasokan daya listrik bekerja secara optimal. Apabila semua kabel sudah terpasang dengan benar dan masih mati total maka perlu diganti dengan yang baru. Jika masih kekurangan daya, silahkan anda coba menganti power supply.'),
+(13, 'K13', 'Kerusakan pada Perangkat USB', 'CPU perlu dibawa ke tempat service untuk ditindaklanjuti lebih jauh.'),
+(14, 'K14', 'Kerusakan pada Keyboard', 'Bersihkan keyboard dari debu, kemudian coba update driver keyboard. Jika masih rusak, silahkan ganti keyboard anda.'),
+(15, 'K15', 'Kerusakan pada Mouse', 'Coba update driver mouse. Jika masih rusak, silahkan ganti mouse anda.'),
+(16, 'K16', 'Kerusakan pada Motherboard', 'Perlu diganti dengan motherboard yang baru dan sama seperti tipe sebelumnya atau bisa juga dengan membawa langsung ke tempat produsen komputer tersebut.'),
+(17, 'K17', 'Permasalahan pada OS', 'Lakukan install ulang Windows atau repair Windows');
 
 -- --------------------------------------------------------
 
@@ -234,7 +254,7 @@ ALTER TABLE `tb_rule`
 -- AUTO_INCREMENT untuk tabel `riwayat_jawaban`
 --
 ALTER TABLE `riwayat_jawaban`
-  MODIFY `id_jawaban` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `id_jawaban` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_admin`
